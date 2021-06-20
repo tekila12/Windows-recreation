@@ -28,7 +28,7 @@ const App =()=> {
   const [smallProject, setSmallProject] =useState()
   const [active, setActive] = useState()
   const project= useRef(null)
-  const [loading, setLoading]= React.useState(true)
+
 
   const closeProject = () =>{
     setIsProjectOpen(false)
@@ -54,12 +54,7 @@ const App =()=> {
 
 
 
-React.useEffect(()=>{
-  setTimeout(() => {  
-    setLoading(false)
-  }, 2000);
-  
-},[])
+
 
 
   return (
@@ -103,9 +98,8 @@ React.useEffect(()=>{
                src={proj.image}/>                  
             </div>
              )}       
-  
-    </>   
 
+    </>   
     </animated.div> )    
   );
 }
