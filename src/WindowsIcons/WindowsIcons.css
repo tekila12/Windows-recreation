@@ -1,0 +1,166 @@
+.windows__icon{
+position: relative;
+display: flex;
+flex-direction: column;
+text-align: center;
+letter-spacing: 0.3px;
+width:max-content;
+margin-left: 0.1em;
+}
+
+
+.windows__list{
+text-align: center;
+padding: 0.5em;  
+list-style: none;
+}
+
+
+.windows__image{
+width: 3.3rem;
+height: 3rem;  
+}
+
+
+
+.windows__text{
+text-align: center;
+color: var(--color);
+width: 3.4rem;
+font-size: 14px!important;
+
+}
+
+
+
+.windows__hover{
+position: absolute;
+transform: rotate(45deg);
+-webkit-transform: rotate(85deg);
+margin-left: 65px;
+margin-top: 15px;
+}
+
+
+
+
+.things__icons > .content__icons {
+float: left;
+width: 50%;
+height: 500px;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;    
+box-sizing: border-box;
+position: relative;
+margin-bottom: 110px;
+margin-top: -160px;
+}
+  
+  
+.svg{
+max-width: 1rem;
+max-height: 2rem;
+}
+ 
+  
+.arrow__icons {
+position: relative;
+width: 100px;
+margin-top: 32px;
+margin-bottom: -31px;
+margin-left: -5px;
+}
+  
+
+
+.arrow__icons .curve__icons {
+border: 2px solid #BE5F4B;
+border-color: transparent transparent transparent #BE5F4B;
+height: 70px;
+width: 700px;
+border-radius: 52px 0 0 280px;
+margin-left: 33px;
+margin-top: -70px;
+}
+
+
+
+.arrow__icons .point__icons {
+position: absolute;
+left: 50px;
+top: 300px;
+}
+ 
+
+
+.arrow__icons .point__icons:before, .arrow__icons .point__icons:after {
+border: 1px solid #BE5F4B;
+height: 10px;
+content: "";
+position: absolute;
+}
+ 
+
+
+.arrow__icons .point__icons:before {
+top: -300px;
+left: -10px;
+transform:rotate(-44deg);
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-74deg);
+-ms-transform: rotate(-74deg);
+}
+
+
+
+.arrow__icons .point__icons:after {
+top: -301px;
+left: -19px;
+transform:rotate(42deg);
+-webkit-transform: rotate(58deg);
+-moz-transform:rotate(32deg);
+-ms-transform: rotate(42deg);
+}
+
+
+
+@media all and (max-width:768px){
+.windows__image{
+width: 3rem;
+height: 2.7rem;           
+}
+
+
+.windows__text{
+font-size: 11px;
+width: 2.7rem;
+}
+
+
+}
+
+@media all and (min-width:320px){
+.windows__image{
+width: 3.2rem;
+height: 3rem;           
+}
+
+.windows__text{
+font-size: 13px;
+width: 3rem;
+}
+}
+
+
+@media all and (min-width:1921px){
+.windows__image{
+width: 4rem;
+height: 3.7rem;           
+}
+    
+.windows__text{
+font-size: 17px;
+width: 3.7rem;
+    }
+    }
+
