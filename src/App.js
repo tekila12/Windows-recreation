@@ -6,13 +6,16 @@ import Taskbar from './TaskbarComponents/Taskbar/Taskbar'
 import WindowsIcons from './WindowsIcons/WindowsIcons'
 import "./App.css"
 import DarkTheme from './Theme/DarkTheme'
+import Games from './Games/Games'
 const data= [
 {
   id:766,
   img:"./images/icons/folder.png",
   image:"./images/icons/file.png",
-  name:"Small Projects"
-}
+  name:"Small Projects",
+
+},
+
 ]
 
 const App =()=> {
@@ -26,6 +29,7 @@ const App =()=> {
 
   const [isProjectOpen, setIsProjectOpen] = useState(false)
   const [smallProject, setSmallProject] =useState()
+  const [games, setGames] =useState()
   const [active, setActive] = useState()
   const project= useRef(null)
 
@@ -64,8 +68,6 @@ const App =()=> {
       <Taskbar/>  
       <DarkTheme />       
        <Info /> 
-
- 
       <WindowsIcons />  
             
       {data.map((projects)=>{           
@@ -98,7 +100,7 @@ const App =()=> {
                src={proj.image}/>                  
             </div>
              )}       
-
+       
     </>   
     </animated.div> )    
   );

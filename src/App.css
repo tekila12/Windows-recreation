@@ -322,7 +322,6 @@ body.dark {
   height: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
-
   background: rgb(47, 194, 71);
 }
 .tick {
@@ -595,6 +594,10 @@ body.dark {
   -webkit-animation: roll-in-top 0.7s ease-out both;
   animation: roll-in-top 0.7s ease-out both;
   cursor: pointer;
+}
+
+.games_cont{
+
 }
 .smallProjects__containershover {
   background-color: rgb(175, 220, 235, 0.2);

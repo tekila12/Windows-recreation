@@ -5,7 +5,6 @@ import {Link
 
 const GuestPage = () => {
  
-
     return (
         <div className='guestPage'>
             <div className='guestLogin'>             
