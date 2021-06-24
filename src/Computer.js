@@ -21,7 +21,7 @@ const Computer = () => {
   setTimeout(()=>{
      history.push('/GuestPage')
   },3000)
- 
+  return () => clearTimeout(push);
  }
 
     return (

@@ -27,8 +27,7 @@ const Home = () => {
         <Switch>              
              <Route path='/app' component={App} />
              <Route path='/' component={Computer} />
-        </Switch>
-          
+        </Switch>    
            <Suspense fallback={<Start/>} > 
         <Route path='/GuestPage' component={GuestPage} />
      </Suspense >

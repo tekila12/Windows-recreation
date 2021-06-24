@@ -113,7 +113,7 @@ body.dark {
   right: 0;
   max-width: 100%;
   height: auto;
-  background-image: url("https://cdn.wallpapersafari.com/97/17/OWgUm3.jpg");
+  background: url("https://cdn.wallpapersafari.com/97/17/OWgUm3.jpg?__cf_chl_captcha_tk__=cb042857d4ff0d01997f33555505a2b88d6b921c-1624571393-0-AdlAHWDz7MG8n3pg8Ouf0Af5U3CrY_BuLzzGCVunwcCJQeLqN68UquZwV1i7ITuFRLKjam3c8moIlCHHi01aN_NJ-JH4iDBHAkAm1xxgOkaKoWMHVVBVkgCwxPyFxYOXZLoA85IBJMahhCFaqhyCNjySxPgBdT8kOLlxPKrOQNW4q9yx0mkppT-vhS9SGw7r-aNly8wX5-1xn61-jJ9nO97DkPUFfIiEWSC_mcaxSO3S-xCYjFEjyu6gLg8dTqoOg98dCxSr8aznDxqI2DO7mCpSJtUc2hth2f3EY3V3qE9BNgsul7x_dbCOS8GcNkfNfpevdWwSU54X-SJVSVN7ZhufhG0wHYcHoixfRi0wHO4nvRmCv2uKZjlkaXulOgiBxU_6NJGvbvN-qE6NEUESWr3903WZPRZFPbJj4ECoA4m1qXvVFy8o-sQj97-bwRYXh2ymmKNCyfceqoLrimdoxVy2drMeUQQwPMR1FIPubduGy8bJt8YpnOcBU1N-EFkT8gwspalt1_YSMd_il3daMYGqIUMBuWDy-AhuWXTh4P26sJSz1yB2c2fBNPsQ_AHiquxvlShVPkaRV3PpKZrn5qxb6YfcYDXggnGSzvy-E1uO7Jl45ajGGyvD3iNYteaQdhWdY6CRgqUNlaQ0wM8KQ9c") !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -156,22 +156,14 @@ body.dark {
   content: "\e001";
 }
 .guestPage {
-  background: url("https://cdn.wallpapersafari.com/97/17/OWgUm3.jpg") !important;
+  background: url("https://cdn.wallpapersafari.com/97/17/OWgUm3.jpg?__cf_chl_captcha_tk__=cb042857d4ff0d01997f33555505a2b88d6b921c-1624571393-0-AdlAHWDz7MG8n3pg8Ouf0Af5U3CrY_BuLzzGCVunwcCJQeLqN68UquZwV1i7ITuFRLKjam3c8moIlCHHi01aN_NJ-JH4iDBHAkAm1xxgOkaKoWMHVVBVkgCwxPyFxYOXZLoA85IBJMahhCFaqhyCNjySxPgBdT8kOLlxPKrOQNW4q9yx0mkppT-vhS9SGw7r-aNly8wX5-1xn61-jJ9nO97DkPUFfIiEWSC_mcaxSO3S-xCYjFEjyu6gLg8dTqoOg98dCxSr8aznDxqI2DO7mCpSJtUc2hth2f3EY3V3qE9BNgsul7x_dbCOS8GcNkfNfpevdWwSU54X-SJVSVN7ZhufhG0wHYcHoixfRi0wHO4nvRmCv2uKZjlkaXulOgiBxU_6NJGvbvN-qE6NEUESWr3903WZPRZFPbJj4ECoA4m1qXvVFy8o-sQj97-bwRYXh2ymmKNCyfceqoLrimdoxVy2drMeUQQwPMR1FIPubduGy8bJt8YpnOcBU1N-EFkT8gwspalt1_YSMd_il3daMYGqIUMBuWDy-AhuWXTh4P26sJSz1yB2c2fBNPsQ_AHiquxvlShVPkaRV3PpKZrn5qxb6YfcYDXggnGSzvy-E1uO7Jl45ajGGyvD3iNYteaQdhWdY6CRgqUNlaQ0wM8KQ9c") !important;
   width: 100% !important;
-  margin: 0 auto !important;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   height: 100% !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  min-width: 100%;
+  position: absolute;
   font-family: "Roboto", sans-serif !important;
 }
 
