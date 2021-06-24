@@ -113,7 +113,7 @@ body.dark {
   right: 0;
   max-width: 100%;
   height: auto;
-  background: url("https://cdn.wallpapersafari.com/22/30/1cumi6.jpg") !important;
+  background-image: url("assets/guest.jpg") !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -156,7 +156,7 @@ body.dark {
   content: "\e001";
 }
 .guestPage {
-  background: url("https://cdn.wallpapersafari.com/22/30/1cumi6.jpg") !important;
+  background-image: url("assets/guest.jpg") !important;
   width: 100% !important;
   height: 100% !important;
   background-position: center;
