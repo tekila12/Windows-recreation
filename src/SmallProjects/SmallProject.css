@@ -312,10 +312,7 @@ max-height: 5.7rem!important;
     margin-left: -13px;
   }
 
-  .smallProject__img{
-    max-width: 33px;
-    max-height: 33px;
-  }
+  
 }
 
 @media all and (min-width:320px){

@@ -77,6 +77,11 @@ body.dark {
   margin-top: 350px;
 }
 
+@media all and (max-width:553px){
+  .starting__windows > img {
+    margin-top: 350px;
+  }
+}
 .starting__text {
   color: white;
   margin-top: 20px;
@@ -164,6 +169,7 @@ body.dark {
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
+  z-index: 1;
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -588,9 +594,7 @@ body.dark {
   cursor: pointer;
 }
 
-.games_cont{
 
-}
 .smallProjects__containershover {
   background-color: rgb(175, 220, 235, 0.2);
   opacity: 0.7;
@@ -840,7 +844,7 @@ body.dark {
 
   .micro__corp {
     font-size: 13px;
-    margin-top: 575px;
+    margin-top: 525px;
   }
 
   .guest__image {
