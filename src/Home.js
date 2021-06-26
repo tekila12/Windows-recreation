@@ -8,7 +8,7 @@ import Start from './Start'
 const GuestPage = React.lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./GuestPage")), 50000)
+      setTimeout(() => resolve(import("./GuestPage")), 5000)
     )
 );
 
