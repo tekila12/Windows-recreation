@@ -29,12 +29,11 @@ right:1%;
 .menu{
 flex-direction: column;
 position:absolute ;
-height: 24.3rem;
-top: -45.7vh;
+height: 25.3rem;
+top: -37.4vh;
 left:-0.1vw;
 width: 16rem;
 background: linear-gradient(to left, rgba(49, 118, 133, 0.5), rgba(34, 74, 87, 0.192));
-
 text-align: center;
 letter-spacing: 0.3px;
 list-style: none;
@@ -85,7 +84,7 @@ animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
   
 .menu__cont{
-max-height:23rem!important ;
+height:27rem!important ;
 max-width: 30rem;
 background: linear-gradient(to left, rgba(77, 181, 204, 0.368), rgb(24, 79, 97));
 width: 3em;
@@ -511,9 +510,9 @@ cursor: pointer;
  @media all and (max-width: 518px){
     .menu{
     left: -0.2vw;
-    height: 23rem;
+    height: 24rem;
     width: 13rem;
-    top: -37.8vh;
+    top: -35.5vh;
     }
 
     .menu__image{

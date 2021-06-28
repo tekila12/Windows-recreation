@@ -26,14 +26,12 @@ const Home = () => {
             <Router>
         <Switch>              
              <Route path='/app' component={App} />
-             <Route path='/' component={Computer} />
-       
+             <Route path='/' component={Computer} />       
         </Switch>    
            <Suspense fallback={<Start/>} > 
-        <Route path='/guestPage' component={GuestPage} />
-     </Suspense >
-      </Router>
-      
+             <Route path='/guestPage' component={GuestPage} />
+           </Suspense >
+            </Router>
         </Suspense>
     
     

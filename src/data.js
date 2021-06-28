@@ -81,7 +81,14 @@ export const smallProjects=[
     icon: <SiGithub/>,
     link: "https://github.com/tekila12/ASC.git",
    },
-  
+   {
+    id:13479,
+    url:"https://crypto3321.netlify.app/",
+    name:"Crypto App",
+    img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
+    link: "https://github.com/tekila12/Crypto-App",
+    icon: <SiGithub/>,
+      },
 ]
 
 export const windowsIcons =[
@@ -110,14 +117,7 @@ export const windowsIcons =[
        link: "https://github.com/tekila12/Audible-e-commerce",
        git: <SiGithub/>,
          },
-             {
-       id:13479,
-       url:"https://crypto3321.netlify.app/",
-       name:"Crypto App",
-       img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
-       link: "https://github.com/tekila12/Crypto-App",
-       git: <SiGithub/>,
-         },
+     
     
     ]
     
@@ -141,13 +141,14 @@ export const windowsIcons =[
         name:"Audible E-comm",
         img:"https://github.com/tekila12/Audible-e-commerce/blob/master/client/public/audible/audible.png?raw=true",
         },
+        /*
            {
         id:18,
         url:"https://crypto3321.netlify.app/",
         name:"Crypto App",
         img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
         },
-        
+        */
         ] 
 
     export const info=[

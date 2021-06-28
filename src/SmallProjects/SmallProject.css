@@ -251,7 +251,7 @@ transform:rotate(12deg);
   display: grid;
 grid-template-columns: 100px 100px 100px;
 grid-template-rows: 130px 10em min-content 10px;
-height: 500px;
+height: 600px;
 }
 
 
