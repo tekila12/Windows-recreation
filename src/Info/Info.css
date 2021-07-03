@@ -86,11 +86,14 @@ width: 3.3rem!important;
    
     }
 
-    @media all and (max-width:392px){
-    .info{
-    left:13vw
-    }
-    }
+  
+    @media all and (max-width:480px){
+      .info{
+      left:-2vw
+      }
+      }
+
+
     }
     @media all and (min-width:1921px){
     svg{

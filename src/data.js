@@ -2,6 +2,7 @@ import React from 'react'
 import {ImLinkedin} from "react-icons/im";
 import {SiGithub} from "react-icons/si";
 import {ImFileWord} from "react-icons/im";
+import {SiLeetcode} from "react-icons/si";
 
 
 export const smallProjects=[
@@ -81,14 +82,7 @@ export const smallProjects=[
     icon: <SiGithub/>,
     link: "https://github.com/tekila12/ASC.git",
    },
-   {
-    id:13479,
-    url:"https://crypto3321.netlify.app/",
-    name:"Crypto App",
-    img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
-    link: "https://github.com/tekila12/Crypto-App",
-    icon: <SiGithub/>,
-      },
+ 
 ]
 
 export const windowsIcons =[
@@ -108,6 +102,15 @@ export const windowsIcons =[
      img:"/images/icons/lol.png",
      link: "https://github.com/tekila12/leaguee.git",
      git: <SiGithub/>,
+
+      },
+      {
+        id:13455439,
+        url:"https://crypto3321.netlify.app/",
+        name:"Crypto App",
+        img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
+        link: "https://github.com/tekila12/Crypto-App",
+        git: <SiGithub/>,
       },
        {
        id:1347,
@@ -124,31 +127,31 @@ export const windowsIcons =[
     export const menuIcons =[
     
       {
-       id:15,
+       id:151,
        url:"https://steam3321.netlify.app/",
        name:"Steam",
        img:"/images/icons/steamm.png",
        },
        {
-        id:16,
+        id:1226,
         url:"https://league3321.netlify.app",
         name:"League of Legends",
         img:"/images/icons/lol.png",
        },  
         {
-        id:18,
+        id:1338,
         url:"https://dry-sierra-26063.herokuapp.com/",
         name:"Audible E-comm",
         img:"https://github.com/tekila12/Audible-e-commerce/blob/master/client/public/audible/audible.png?raw=true",
         },
-        /*
+       
            {
-        id:18,
+        id:1855,
         url:"https://crypto3321.netlify.app/",
         name:"Crypto App",
         img:"https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
         },
-        */
+    
         ] 
 
     export const info=[
@@ -162,11 +165,17 @@ export const windowsIcons =[
         name: "Github",
         url: 'https://github.com/tekila12'
       },
-      { id:21, 
+      { id:441, 
         icon: <ImFileWord/>,
         name: "Resume",
         url: './images/icons/AjnurResume.pdf'
-      }    
+      },
+      { id:23331, 
+        icon: <SiLeetcode/>,
+        name: "LeetCode",
+        url: "https://leetcode.com/Ajnur12/"
+      },
+     
     ]
     
   
