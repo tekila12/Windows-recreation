@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Computer from './Computer'
 import Monitor from './Monitor'
 import Desk from './Desk'
@@ -14,20 +14,22 @@ export const Setup = () => {
     const [spinnerTwo, setSpinnerTwo] = useState(false);
     const [backgroundColor, setBackgroundColor]= useState(false)
   
-      
+     
+   
+   
+
+
    const push= ()=>{ 
     setTimeout(()=>{
-    setBackgroundColor(true)
     setSpinnerOne(true)
     setSpinnerTwo(true) 
-    
+    setBackgroundColor(true)
     },1000)
     setColorGreen(true)
-   
     setTimeout(()=>{
        history.push('/GuestPage')
-    },3000)
-    return () => clearTimeout();
+    },300000)
+  
    }
 
     return (

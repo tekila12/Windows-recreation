@@ -874,6 +874,47 @@ body.dark {
     width: 90px;
     height: 90px;
   }
+
+  .computer__cont{
+    width:80px;
+    left: 80%;
+  }
+  .computer__top{
+  width: 65px;
+  }
+  .cd__rom{
+    margin-right: 21px;
+    font-size: 9px;
+  }
+
+  .jacks{
+    margin-left: 7px;
+  }
+  .spin::before{
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+  }
+
+  .spike::before{
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+  }
+
+  .spinner:before{
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+  }
+
+  .spins::before{
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+  }
+
+
 }
 
 @media all and (max-width: 481px) {
