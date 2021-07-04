@@ -2,30 +2,12 @@ import React,{useState} from 'react'
 import {
     useHistory
   } from "react-router-dom";
-const Computer = () => {
+const Computer = ({spinnerOne, spinnerTwo, colorGreen, push}) => {
 
-  const history = useHistory()
-
-  const [colorGreen, setColorGreen] = useState(false);
-  const [spinnerOne, setSpinnerOne] = useState(false);
-  const [spinnerTwo, setSpinnerTwo] = useState(false);
-
-
-    
- const push= ()=>{ 
-  setTimeout(()=>{
-    setSpinnerOne(true)
-  setSpinnerTwo(true) 
-  },1000)
-  setColorGreen(true)
-  setTimeout(()=>{
-     history.push('/GuestPage')
-  },3000)
-  return () => clearTimeout(push);
- }
+ 
 
     return (
-        <div className='computer'>
+       
            <div className='computer__main'>
              <div className='computer__cont'>
                  <h6 className='cd__rom'>CD-ROM</h6>
@@ -46,7 +28,7 @@ const Computer = () => {
            </div>
            </div>  
            </div>
-        </div>
+        
     )
 }
 

@@ -1,0 +1,185 @@
+.setup{
+width: 100%;
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: black ;
+}
+.Head{
+    display: flex;
+    position: relative;
+    top: 1%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+.monitor__screen{
+display: flex;
+position: relative;
+top: -237%;
+left:-65%;
+z-index: 3;
+width: 100%;
+right: 0;
+bottom: 0;
+max-width: 220px;
+height: 200px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border: 2px solid rgb(31, 31, 31); 
+background-color: rgb(0, 0, 0);
+}
+
+
+.monitor__sides{
+width: 210px;
+height: 190px;
+border: 2px solid rgb(31, 31, 31); 
+margin: 10px 10px 20px 10px;
+background: rgba(2, 2, 2, 0.719);
+transition: 0.4 all linear;
+
+}
+.monitor__side{
+    width: 210px;
+    height: 190px;
+    border: 2px solid rgb(31, 31, 31); 
+    margin: 10px 10px 20px 10px;
+    background: rgba(78, 78, 78, 0.719);
+    transition: 0.4 all linear;
+}
+.backgroundColor{
+ transition: 0.4s linear;
+ width: 210px;
+height: 190px;
+border: 2px solid rgb(31, 31, 31); 
+margin: 10px 10px 20px 10px;
+transition: 0.4 all linear;
+z-index: 10;
+ position: relative;
+background: rgba(196, 189, 189, 0.719)   
+}
+
+
+.samsung__bottom{
+position: relative;
+bottom: -103%;
+left: 41%;
+}
+
+
+.samsung__bottom > h2{
+color: blanchedalmond;
+font-size: 10px;   
+}
+
+.monitor__handle{
+    position: relative;
+    width: 17px;
+    margin-bottom: -35px;
+    height: 30px;
+    background-color: rgba(29, 28, 28, 0.691);
+}
+
+.monitor__handleLine{
+width: 40px;
+height: 10px;
+background-color: rgba(0, 0, 0, 0.918);
+position: relative;
+bottom: -29px;
+left: 1px;
+border-radius: 50%;
+}
+
+
+/* Desk */
+
+.Desk{
+    display: flex;
+    position: absolute;
+    top: -25%;
+    left:-80%;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(44, 20, 3, 0.39);
+    width: 400px;
+    height: 320px;
+ 
+    border: 2px solid rgb(31, 31, 31); 
+    
+}
+
+.Desk__head{
+    position: relative;
+    top: -8%;
+    left:7%;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+}
+
+.desk__legLeft{
+    position: absolute;
+    left: -18px;
+   transform: rotate(10deg);
+    bottom: 250px;
+    width: 10px;
+    border-color: rgb(47, 47, 47);
+    height: 70px;
+    border: 1px solid rgb(47, 47, 47); ;
+    border-radius:20%;
+    background-color: rgba(44, 20, 3, 0.39);
+}
+
+.desk__legLeftTwo{
+    position: absolute;
+    left: -3px;
+    bottom: -104px;
+    width: 10px;
+  
+    height: 100px;
+   
+    border: 1px solid rgb(47, 47, 47); ;
+    border-radius:20%;
+    background-color: rgba(44, 20, 3, 0.39);
+}     
+
+.desk__legRight{
+    position:absolute;
+    left: 405px;
+    top: -1px;
+    transform: rotate(-10deg);
+    bottom: -150px;
+    width: 10px;
+    height: 70px;
+    border: 1px solid rgb(47, 47, 47);
+    border-radius:20%;
+    background-color: rgba(44, 20, 3, 0.39);
+}    
+
+.desk__legRightTwo{
+    position:absolute;
+    left: 390px;
+    top: 320px;
+    border: 1px solid rgb(47, 47, 47); ;
+    border-radius:20%;
+    bottom: -150px;
+    width: 10px;
+    height: 100px;
+    background-color: rgba(44, 20, 3, 0.39);
+}

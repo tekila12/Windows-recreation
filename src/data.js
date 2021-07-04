@@ -173,7 +173,7 @@ export const windowsIcons =[
       { id:23331, 
         icon: <SiLeetcode/>,
         name: "LeetCode",
-        url: "https://leetcode.com/Ajnur12/"
+        url: "https://leetcode.com/Ajnur12"
       },
      
     ]
