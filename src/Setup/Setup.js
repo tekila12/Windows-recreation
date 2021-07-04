@@ -28,7 +28,7 @@ export const Setup = () => {
     setColorGreen(true)
     setTimeout(()=>{
        history.push('/GuestPage')
-    },300000)
+    },3000)
   
    }
 

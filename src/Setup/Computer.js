@@ -3,9 +3,7 @@ import {
     useHistory
   } from "react-router-dom";
 const Computer = ({spinnerOne, spinnerTwo, colorGreen, push}) => {
-  console.log(spinnerTwo)
-  console.log(spinnerOne)
-  console.log(colorGreen)
+ 
     return (
        
            <div className='computer__main'>
