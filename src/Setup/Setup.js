@@ -5,6 +5,7 @@ import Desk from './Desk'
 import {
     useHistory
   } from "react-router-dom";
+import Keyboard from './Keyboard';
 export const Setup = () => {
 
     const history = useHistory()
@@ -13,22 +14,25 @@ export const Setup = () => {
     const [spinnerOne, setSpinnerOne] = useState(false);
     const [spinnerTwo, setSpinnerTwo] = useState(false);
     const [backgroundColor, setBackgroundColor]= useState(false)
-  
-     
-   
+    const [keyboardActive, setKeyboardActive] = useState(false)
+    const [streching, setStreching] = useState(false);
+    
    
 
 
    const push= ()=>{ 
     setTimeout(()=>{
     setSpinnerOne(true)
-    setSpinnerTwo(true) 
-    setBackgroundColor(true)
+    setSpinnerTwo(true)   
+    setKeyboardActive(true)
+   setStreching(true)
     },1000)
     setColorGreen(true)
+    setBackgroundColor(true)
+    
     setTimeout(()=>{
        history.push('/GuestPage')
-    },3000)
+    },500000)
   
    }
 
@@ -40,10 +44,15 @@ export const Setup = () => {
             spinnerOne={spinnerOne}
             spinnerTwo={spinnerTwo}
             push={push}/>
-            <Monitor /> 
-            <Desk bgColor={backgroundColor}/>            
+            <Monitor
+            backgroundColor={backgroundColor}
+            streching={streching}
+            /> 
+            <Desk        
+             />   
+            <Keyboard keyboardActive={keyboardActive}/>         
             </div>
-         <div className='Desk__head'>    
+            <div className='Desk__head'>    
             </div>          
         </div>
     )
