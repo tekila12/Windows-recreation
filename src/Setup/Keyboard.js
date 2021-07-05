@@ -73,7 +73,7 @@ const Keyboard = ({keyboardActive}) => {
               <span className='key arrow__right'>▶</span>
               </span>
             </div>
-            
+            <span className='cable'></span>
         </div>
     )
 }
