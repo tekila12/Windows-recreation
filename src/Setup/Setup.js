@@ -33,7 +33,7 @@ export const Setup = () => {
     
     setTimeout(()=>{
        history.push('/GuestPage')
-    },500000)
+    },5000)
   
    }
 
