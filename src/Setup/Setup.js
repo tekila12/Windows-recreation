@@ -16,7 +16,7 @@ export const Setup = () => {
     const [backgroundColor, setBackgroundColor]= useState(false)
     const [keyboardActive, setKeyboardActive] = useState(false)
     const [streching, setStreching] = useState(false);
-    
+    const [mouseColor, setMouseColor] = useState(false);
    
 
 
@@ -25,14 +25,15 @@ export const Setup = () => {
     setSpinnerOne(true)
     setSpinnerTwo(true)   
     setKeyboardActive(true)
-   setStreching(true)
+    setStreching(true)
+    setMouseColor(true)
     },1000)
     setColorGreen(true)
     setBackgroundColor(true)
     
     setTimeout(()=>{
        history.push('/GuestPage')
-    },5000)
+    },500000)
   
    }
 
@@ -50,7 +51,9 @@ export const Setup = () => {
             /> 
             <Desk        
              />   
-            <Keyboard keyboardActive={keyboardActive}/>         
+            <Keyboard 
+            keyboardActive={keyboardActive}
+            mouseColor={mouseColor}/>         
             </div>
             <div className='Desk__head'>    
             </div>          

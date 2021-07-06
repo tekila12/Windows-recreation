@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Keyboard = ({keyboardActive}) => {
+const Keyboard = ({keyboardActive, mouseColor}) => {
     
-    console.log(keyboardActive)
+    console.log(mouseColor)
     return (
         <div>
             <div className='keyboard'>
@@ -74,6 +74,13 @@ const Keyboard = ({keyboardActive}) => {
               </span>
             </div>
             <span className='cable'></span>
+            <div className={mouseColor ? ` mouse mouseColor` : "mouse"}>
+              <span className='left__click'></span>
+              <span className='right__click'>
+                  <span>MS</span>
+              </span>
+              <span className='circle'></span>
+            </div>
         </div>
     )
 }
