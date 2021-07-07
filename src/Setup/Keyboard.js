@@ -2,7 +2,7 @@ import React from 'react'
 
 const Keyboard = ({keyboardActive, mouseColor}) => {
     
-    console.log(mouseColor)
+   
     return (
         <div>
             <div className='keyboard'>

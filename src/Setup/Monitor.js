@@ -3,8 +3,7 @@ import './Computer.css'
 const Monitor = ({backgroundColor, streching}) => {
 
   
-console.log(backgroundColor)
-console.log(streching)
+
 
     return (
        <div className='Monitor'>
