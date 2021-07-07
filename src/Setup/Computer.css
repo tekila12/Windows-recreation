@@ -575,14 +575,51 @@ background-color: black;
     }
 
     .keyboard{
-    width: 180px;
-    height: 90px;
+    width: 140px;
+    height: 80px;
     background-color: rgb(34, 23, 23);
     position: relative;
-    bottom: 500%;
+    bottom: 560%;
     box-shadow: 0 8px 6px -6px rgb(255 255 255 / 57%);
-    left: -40%;
+    left: -70%;
     }
+.key{
+padding: 0.03em;
+    }
+   
 
+   .mouse{
+     left: 38%;
+   }
 
+   .mouse__cabel{
+    top: -3.6%;
+    left: 9%;
+    transform: rotate(-265deg);
+   }
+    .monitor__handle{
+    background: black;
+    }
+   .cable__keyboard{  
+    left: -10%;
+   }
+
+   .arrow__up{
+ 
+    width:2em;
+    margin-left: 12px;
+   
+    }
+    .arrow__left{
+        width:2em;   
+        }
+    
+        .arrow__back{
+        width:2em;
+        height: 10px;
+        }
+        .arrow__right{
+        width:2em;
+    
+        }
 }
