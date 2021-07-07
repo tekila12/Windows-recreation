@@ -6,7 +6,7 @@ const Keyboard = ({keyboardActive, mouseColor}) => {
     return (
         <div>
             <div className='keyboard'>
-             <span className={ keyboardActive ? `cases keyboardActive  ` :'case'}>
+             <span className={ keyboardActive ? `keyboardActive cases  ` :'case'}>
               <span className='key'>Esc</span>
               <span className='key'>1</span>
               <span className='key'>2</span>
@@ -73,14 +73,16 @@ const Keyboard = ({keyboardActive, mouseColor}) => {
               <span className='key arrow__right'>▶</span>
               </span>
             </div>
-            <span className='cable'></span>
-            <div className={mouseColor ? ` mouse mouseColor` : "mouse"}>
+            <span className='cable__keyboard'></span>
+            <div className={mouseColor ? `mouseColor mouses ` : "mouse"}>
               <span className='left__click'></span>
               <span className='right__click'>
                   <span>MS</span>
               </span>
               <span className='circle'></span>
             </div>
+            <span className='mouse__cabel'></span>
+
         </div>
     )
 }

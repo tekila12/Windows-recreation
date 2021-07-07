@@ -62,12 +62,6 @@ background: rgba(12, 12, 12, 0.465);
 transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
 }
 
-.backgroundColor{
-z-index: 3;
-background: rgba(20, 20, 20, 0.719);
-transition: background 0.6s ease-in-out, color 0.9s ease-in-out;
- 
-}
 
 .savings{
 display: none;
@@ -79,9 +73,11 @@ color: rgba(255, 255, 255, 0.37);
 font-size: 13px;
 font-family: sans-serif;
 margin-left: 3px;
-margin-bottom: 4px;
-transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+margin-bottom: -15px;
+transition: background 0.6s ease-in-out, color 0.9s ease-in-out;
 }
+
+
 @keyframes blink {
     /**
      * At the start of the animation the dot
@@ -156,7 +152,7 @@ left: 41%;
 .samsung__bottom > h2{
 color: blanchedalmond;
 font-size: 10px;  
-margin-top: -20px; 
+
 }
 
 .monitor__handle{
@@ -265,17 +261,15 @@ border-radius: 50%;
  bottom: 500%;
  box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.568);
  left: -90%;
+
 }
 
 
-.keyboardActive:before{
--webkit-animation: keyboardActive 4s ease infinite !important;
--moz-animation: keyboardActive 4s ease infinite !important;
-transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
-animation: keyboardActive 4s ease infinite !important;
-}
+
+
+
 .cases{
-    background: linear-gradient(271deg, #6d1c1c, #0c2f26)!important;
+    background: linear-gradient(471deg, #380f68,  #0c2f26,#0e2177,  #071813);
     background-size: 400% 400%!important;
     border-color: #2e2640;
     border-style: solid;
@@ -284,28 +278,54 @@ animation: keyboardActive 4s ease infinite !important;
     display: flex;
     flex-wrap: wrap;
     user-select: none;
-    width: 100%;  
-    transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+    width: 100%;
+    transition: background 0.4s ease-in-out, color 0.6s ease-in-out;
+    -webkit-animation: keyboardActive 5s ease infinite;
+    -moz-animation: keyboardActive 5s ease infinite;
+    animation: keyboardActive 5s ease infinite; 
+}
+
+.keyboardActive::before{
+-webkit-animation: keyboardActive 5s ease infinite;
+-moz-animation: keyboardActive 5s ease infinite;
+animation: keyboardActive 5s ease infinite;  
+transition: background 0.4s ease-in-out, color 0.6s ease-in-out;
+
+}
+@-webkit-keyframes keyboardActive {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes keyboardActive {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes keyboardActive { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
 }
 
 .key{
-    border-color: #382e59 #2e2640;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    color: #bbadd9;
-    display: inline-flexbox;
-    font-family: sans-serif;
-    font-size: 6px;
-    font-weight: 800;
-    grid-column-end: span 2;
-    text-align: center;
-   margin-bottom: 3px;
-   height: min-content;
-    text-transform: uppercase;
-    transition: all 50ms ease-out;
-    padding: 0.24em;
-    will-change: box-shadow, color, text-shadow;
+border-color: #382e59 #2e2640;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+color: #bbadd9;
+display: inline-flexbox;
+font-family: sans-serif;
+font-size: 6px;
+font-weight: 800;
+grid-column-end: span 2;
+text-align: center;
+margin-bottom: 3px;
+height: min-content;
+text-transform: uppercase;
+transition: all 50ms ease-out;
+padding: 0.24em;
+will-change: box-shadow, color, text-shadow;
 }
 .case{
 background-color: #463973;
@@ -317,7 +337,7 @@ background-color: #463973;
   flex-wrap: wrap;
   user-select: none;
   width: 100%;
-  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+transition: background 0.4s ease-in-out, color 0.6s ease-in-out;
 }
 .arrow__up{
 font-size: 5px;
@@ -352,35 +372,90 @@ height: 10px;
     height: 10px;
     }
 
-/*
-    .cable{
-    width:3px;
-    height:200px;
-    background-color: teal;
-    position: absolute;
-    top: 100px;
-    transform: skew(15deg, 15deg);
-    }
-j*/
 
- .mouse{
+    .cable__keyboard{
+        height: 25px;
+        width: 119px;
+        background: transparent;
+        border-radius: 11px 44px 0px 332px/219px;
+        border: solid 3px rgb(82, 79, 79);
+        border-top: 37px;
+        padding: 10px;
+        transform: rotate(-244deg);
+        border-right: none;
+        margin: 17px;
+        left: -15%;
+        position: absolute;
+        top: -5%;
+    }
+
+.mouse__cabel{
+    height: -14px;
+    width: 124px;
+    background: transparent;
+    border-radius: 11px 44px 0px 332px/219px;
+    border: solid 3px rgb(82, 79, 79);
+    border-top: 37px;
+    padding: 10px;
+    transform: rotate(-265deg);
+    border-right: none;
+    margin: 17px;
+    top: -3.6%;
+    left: -2%;
+    position: absolute;
+}
+.mouseColor::before{
+    -webkit-animation: mouseColor 5s ease infinite;
+    -moz-animation: mouseColor 5s ease infinite;
+    animation: mouseColor 5s ease infinite;  
+    transition: background 0.4s ease-in-out, color 0.6s ease-in-out;
+    
+    }
+    @-webkit-keyframes mouseColor {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+    @-moz-keyframes mouseColor {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+    @keyframes mouseColor { 
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+
+.mouses{
 height: 50px;
 position: absolute;
 width: 40px;
 border-radius: 50%;
-background: linear-gradient(271deg, #441616, #0c2f26, #19302a )!important;
+background: linear-gradient(471deg, #380f68,  #0c2f26,#0e2177,  #071813);
+top: 13%;
+left: 22%;
+-webkit-animation: mouseColor 5s ease infinite;
+-moz-animation: mouseColor 5s ease infinite;
+animation: mouseColor 5s ease infinite;  
+transition: background 0.8s ease-in-out, color 0.7s ease-in-out;  
+}
+.mouse{
+height: 50px;
+position: absolute;
+width: 40px;
+border-radius: 50%;
+background: rgba(12, 11, 11, 0.746);
 top: 13%;
 left: 22%;
 transition: background 0.8s ease-in-out, color 0.7s ease-in-out;
- }
+}
 
 .mouseColor{
-background: linear-gradient(271deg, #441616, #0c2f26,  )!important;
--webkit-animation: keyboardActive 4s ease infinite !important;
--moz-animation: keyboardActive 4s ease infinite !important;
-transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
-animation: keyboardActive 4s ease infinite !important;
+background: linear-gradient(271deg, #310505, #118b6d,  )!important;
 }
+
+
  .left__click{
  width: 38px;
  height: 2px;
@@ -416,7 +491,7 @@ font-weight: 700;
 .circle{
 height: 7px;
 position: absolute;
-width: 5px;
+width: 6px;
 bottom: 30px;
 left: 1.08em;
 border-radius: 50%;
