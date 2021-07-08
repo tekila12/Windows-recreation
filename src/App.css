@@ -6,6 +6,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   min-width: 100%;
+  
 }
 
 :root {
@@ -21,6 +22,7 @@ body {
   background: var(--slide1);
   color: var(--color);
   transition: 0.4s;
+  
 }
 
 body.light {
@@ -35,8 +37,10 @@ body.light {
   object-fit: contain;
   color: var(--white);
   font-weight: var(--font-weight);
+  
   --slide1: url("https://th.bing.com/th/id/Rb5952fdd56d4264cbad02c191f9af225?rik=umZe9c44jBvxGA&pid=ImgRaw");
 }
+
 
 
 body.dark {
@@ -69,6 +73,29 @@ body.dark {
   justify-content: center;
   color: white;
   font-family: "Lato", sans-serif;
+  -webkit-animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .starting__windows > img {
@@ -171,7 +198,34 @@ body.dark {
   background-size: cover;
   position: absolute;
   z-index: 11;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   font-family: "Roboto", sans-serif !important;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .guestLogin {
