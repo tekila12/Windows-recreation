@@ -82,7 +82,6 @@ const Keyboard = ({keyboardActive, mouseColor}) => {
               <span className='circle'></span>
             </div>
             <span className='mouse__cabel'></span>
-
         </div>
     )
 }

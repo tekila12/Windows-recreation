@@ -462,6 +462,7 @@ background: linear-gradient(271deg, #310505, #118b6d,  )!important;
  bottom: 30px;
  background-color: rgb(23, 23, 24);
  left: 1px;
+ color: black;
  position: absolute;
  }
 
@@ -484,6 +485,7 @@ font-size: 13px;
 position:absolute;
 bottom: -13px;
 left: -6px;
+color: black,!important;
 font-weight: 700;
 }
 
@@ -493,7 +495,7 @@ height: 7px;
 position: absolute;
 width: 6px;
 bottom: 30px;
-left: 1.08em;
+left: 1.07em;
 border-radius: 50%;
 background-color: black;
 }
