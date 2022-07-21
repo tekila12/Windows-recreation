@@ -55,8 +55,12 @@ export const Setup = () => {
             keyboardActive={keyboardActive}
             mouseColor={mouseColor}/>         
             </div>
+            <h2 className='press__button'>Press on the Power Button</h2>
+
             <div className='Desk__head'>    
+            
             </div>          
+        
         </div>
     )
 }

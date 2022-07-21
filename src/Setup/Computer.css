@@ -12,6 +12,8 @@ justify-content: center;
 flex-direction: column;
 background-color: black ;
 }
+
+
 .Head{
     display: flex;
     position: relative;
@@ -28,14 +30,14 @@ background-color: black ;
 .monitor__screen{
 display: flex;
 position: relative;
-top: -237%;
+top: -217%;
 left:-65%;
 z-index: 3;
 width: 100%;
 right: 0;
 bottom: 0;
 max-width: 220px;
-height: 200px;
+height: 150px;
 align-items: center;
 justify-content: center;
 flex-direction: column;
@@ -179,7 +181,7 @@ border-radius: 50%;
 .Desk{
     display: flex;
     position: absolute;
-    top: -25%;
+    top: -8%;
     left:-80%;
     right: 0;
     bottom: 0;
@@ -191,6 +193,17 @@ border-radius: 50%;
     
 }
 
+
+.press__button{
+    color:gray;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    
+    margin-left: 100px;
+    width: 20%;
+    margin-top: 100px;
+    
+}
 .Desk__head{
     position: relative;
     top: -8%;
@@ -258,7 +271,7 @@ border-radius: 50%;
  height: 90px;
  background-color: rgb(34, 23, 23);
  position: relative;
- bottom: 500%;
+ bottom: 320%;
  box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.568);
  left: -90%;
 
@@ -374,7 +387,7 @@ height: 10px;
 
 
     .cable__keyboard{
-        height: 25px;
+        height: 55px;
         width: 119px;
         background: transparent;
         border-radius: 11px 44px 0px 332px/219px;
@@ -386,12 +399,12 @@ height: 10px;
         margin: 17px;
         left: -15%;
         position: absolute;
-        top: -5%;
+        top: 13.1%;
     }
 
 .mouse__cabel{
     height: -14px;
-    width: 124px;
+    width: 184px;
     background: transparent;
     border-radius: 11px 44px 0px 332px/219px;
     border: solid 3px rgb(82, 79, 79);
@@ -400,8 +413,8 @@ height: 10px;
     transform: rotate(-265deg);
     border-right: none;
     margin: 17px;
-    top: -3.6%;
-    left: -2%;
+    top: 9.8%;
+    left: -13.4%;
     position: absolute;
 }
 .mouseColor::before{
@@ -433,7 +446,7 @@ position: absolute;
 width: 40px;
 border-radius: 50%;
 background: linear-gradient(471deg, #380f68,  #0c2f26,#0e2177,  #071813);
-top: 13%;
+top: 33%;
 left: 22%;
 -webkit-animation: mouseColor 5s ease infinite;
 -moz-animation: mouseColor 5s ease infinite;
@@ -446,7 +459,7 @@ position: absolute;
 width: 40px;
 border-radius: 50%;
 background: rgba(12, 11, 11, 0.746);
-top: 13%;
+top: 33%;
 left: 22%;
 transition: background 0.8s ease-in-out, color 0.7s ease-in-out;
 }
