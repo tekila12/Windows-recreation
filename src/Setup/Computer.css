@@ -196,13 +196,15 @@ border-radius: 50%;
 
 .press__button{
     color:gray;
-    position: absolute;
     font-family: 'Courier New', Courier, monospace;
-    
-    margin-left: 100px;
-    width: 20%;
-    margin-top: 100px;
-    
+    position: relative;
+    top: 50%;
+    width: 50%;
+    margin-left: 90px;
+    margin-top: 170px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
 }
 .Desk__head{
     position: relative;

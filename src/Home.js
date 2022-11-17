@@ -8,7 +8,7 @@ import { Setup } from './Setup/Setup';
 const GuestPage = React.lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./GuestPage")), 5000)
+      setTimeout(() => resolve(import("./GuestPage")), 3000)
     )
 );
 

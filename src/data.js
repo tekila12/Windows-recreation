@@ -168,7 +168,7 @@ export const windowsIcons =[
       { id:441, 
         icon: <ImFileWord/>,
         name: "Resume",
-        url: './images/icons/AjnurResumee.pdf'
+        url: './images/icons/AjnurFrontResume.pdf'
       },
       { id:23331, 
         icon: <SiLeetcode/>,

@@ -41,6 +41,7 @@ display: flex;
 border: 1px solid rgb(17, 108, 138);
 border-radius: 0em 1em 1em 0em;
 opacity: 1;
+margin-top: -10px;
 -webkit-animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -505,7 +506,17 @@ cursor: pointer;
  }
 
 
+ @media all and (max-width: 1920px){
+  .menu{
+  left: -0.2vw;
+  height: 24rem;
+  width: 13rem;
+ margin-top: -10px;
+  
+  }
 
+
+}
  
  @media all and (max-width: 518px){
     .menu{
@@ -513,7 +524,7 @@ cursor: pointer;
     height: 24rem;
     width: 13rem;
     top: -739%;
-    
+    margin-top: 1px;
     }
 
     .menu__image{
@@ -544,6 +555,7 @@ cursor: pointer;
     height: 24.3rem;
     width: 20rem;
     top: -48.6vh;
+    margin-top: -33px;
     }
 
 

@@ -19,21 +19,42 @@ export const Setup = () => {
     const [mouseColor, setMouseColor] = useState(false);
    
 
-
-   const push= ()=>{ 
-    setTimeout(()=>{
+const runningAnimation = () => {
     setSpinnerOne(true)
     setSpinnerTwo(true)   
     setKeyboardActive(true)
     setStreching(true)
     setMouseColor(true)
-    },1000)
+}
+
+const stopAnimation = () => {
+    setSpinnerOne(false)
+    setSpinnerTwo(false)   
+    setKeyboardActive(false)
+    setStreching(false)
+    setMouseColor(false)
+}
+
+
+const secondAnimation=() => {
     setColorGreen(true)
     setBackgroundColor(true)
-    
+}
+const secondAnimationStop=() => {
+    setColorGreen(false)
+    setBackgroundColor(false)
+}
+
+   const push= ()=>{ 
+    setTimeout(()=>{
+    runningAnimation()
+    },500)
+    secondAnimation() 
     setTimeout(()=>{
        history.push('/GuestPage')
-    },5000)
+       stopAnimation()
+       secondAnimationStop()
+    },3200)
   
    }
 
@@ -55,11 +76,9 @@ export const Setup = () => {
             keyboardActive={keyboardActive}
             mouseColor={mouseColor}/>         
             </div>
-            <h2 className='press__button'>Press on the Power Button</h2>
 
-            <div className='Desk__head'>    
-            
-            </div>          
+
+               
         
         </div>
     )

@@ -9,8 +9,10 @@ const Desk = () => {
          </span>  
          <span className='desk__legRight'>           
          </span>  
+        <h3 className='press__button'>Press on the Power Button</h3>
          <span className='desk__legRightTwo'>           
          </span>  
+    
         </div>
     )
 }

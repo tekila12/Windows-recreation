@@ -12,16 +12,10 @@ const SmallProject = ({closeProject}) => {
                 <h3>Windows project</h3>
                   </div>
                   <div  className='smallProject__cont' >
-                 {smallProjects.map((projects)=>{
-               const {id, name, url, img, icon, link}= projects;
+                 {smallProjects.map((projects)=>{          
                return(                                      
                       <HoverIcons 
-                      key={id}
-                      name={name}
-                      url={url}
-                      img={img}
-                      icon={icon}
-                      link={link}
+                     {...projects}
                       />                                      
                )
            })}
