@@ -4,6 +4,8 @@ import SmallProject from './SmallProject'
 import FrontEndProjects from './FrontEndProjects'
 import "../App.css"
 import { frontEnd } from '../data'
+import FullStackProjects from './FullStackProjects'
+import ThreeDProjects from './ThreeDProjects'
 
 const data = [
   {
@@ -16,6 +18,17 @@ const data = [
     img: "./images/icons/folder.png",
     image: "./images/icons/file.png",
     frontEnd: "Front End Projects",
+
+    id: 765,
+    img: "./images/icons/folder.png",
+    image: "./images/icons/file.png",
+    gl: "3D/Web Gl Projects",
+    
+    id: 766,
+    img: "./images/icons/folder.png",
+    image: "./images/icons/file.png",
+    full: "FullStack Projects",
+   
 
   },
 
@@ -32,7 +45,11 @@ const Projects = () => {
 
   const [isProjectOpen, setIsProjectOpen] = useState(false)
   const [isFrontOpen, setIsFrontOpen] = useState(false)
+  const [isFullOpen, setIsFullOpen] = useState(false)
+  const [isThreeOpen, setIsThreeOpen] = useState(false)
   const [smallProject, setSmallProject] = useState()
+  const [FullProject, setFullProject] = useState()
+  const [ThreeProject, setThreeProject] = useState()
   const [frontProject, setFrontProject] = useState()
   const [games, setGames] = useState()
   const [active, setActive] = useState()
@@ -47,20 +64,17 @@ const Projects = () => {
   const closeFront = () => {
     setIsProjectOpen(false)
   }
-  const openFront = () => {
-    setIsProjectOpen(true)
+  const closeThree = () => {
+    setIsThreeOpen(false)
   }
-
+  const closeFull = () => {
+    setIsFullOpen(false)
+  }
+ /*
   const fron = data.find(projects => projects.id === frontProject)
   const proj = data.find(projects => projects.id === smallProject)
 
-
-  const activeWindow = () => {
-   if(setIsFrontOpen(true)){
-    alert('opened')
-   }
-  
-  }
+*/
 
   /* OutsideClick Logic */
 
@@ -107,7 +121,7 @@ const Projects = () => {
             return (
                 
               <>
-                {active === frontEndprojectRef.id && (
+                {active === smallProjectRef.id && (
                   <div
                     onClick={() => { setIsProjectOpen(!isProjectOpen); setSmallProject(projects.id) }}
                   
@@ -141,7 +155,44 @@ const Projects = () => {
                       src={projects.img} />
                     <h4>
                       {projects.frontEnd} </h4>
-                    {isFrontOpen ? <FrontEndProjects active={active} isFrontOpen={isFrontOpen} closeFront={closeFront} /> : null}
+                    {isFrontOpen ? <FrontEndProjects  closeFront={closeFront} /> : null}
+                  </div>)}
+              </>
+            )
+          })}
+           {data.map((projects) => {
+            return (
+              <>
+                {active === frontEndprojectRef.id && (
+                  <div
+                    key={projects.id}
+                    onClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}             
+                  >
+                    <img alt='projectImage'
+                      className="smallProject__img"
+                      src={projects.img} />
+                    <h4>
+                      {projects.gl} </h4>
+                    {isThreeOpen ? <ThreeDProjects  closeThree={closeThree} /> : null}
+                  </div>)}
+              </>
+            )
+          })}
+           {data.map((projects) => {
+            return (
+              <>
+                {active === frontEndprojectRef.id && (
+                  <div
+                    key={projects.id}
+                    onClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }}
+                 
+                  >
+                    <img alt='projectImage'
+                      className="smallProject__img"
+                      src={projects.img} />
+                    <h4>
+                      {projects.full} </h4>
+                    {isFullOpen ? <FullStackProjects  closeFull={closeFull} /> : null}
                   </div>)}
               </>
             )

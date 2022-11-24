@@ -5,7 +5,7 @@ import {ImFileWord} from "react-icons/im";
 import {SiLeetcode} from "react-icons/si";
 
 
-export const smallProjects=[
+export const small =[
   {
    id:1,
    url:"https://slider3321.netlify.app/",

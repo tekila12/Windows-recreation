@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import {smallProjects} from "../data"
+import {small} from "../data"
 import './SmallProject.css'
 import{GrClose} from "react-icons/gr"
 import HoverIcons from './HoverIcons'
@@ -12,7 +12,7 @@ const SmallProject = ({closeProject}) => {
                 <h3>Small Projects</h3>
                   </div>
                   <div  className='smallProject__cont' >
-                 {smallProjects.map((projects)=>{          
+                 {small.map((projects)=>{          
                return(                                      
                       <HoverIcons 
                      {...projects}
