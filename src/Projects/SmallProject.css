@@ -1,0 +1,340 @@
+.smallProject{
+position: fixed;
+left:40%;
+background: linear-gradient(to left, rgba(59, 134, 153, 0.868), rgb(43, 95, 112));
+bottom:40vh; 
+text-align: center;
+-moz-box-shadow:    inset 0 0 10px #000000;
+-webkit-box-shadow: inset 0 0 10px #000000;
+box-shadow:         inset 0 0 10px #000000;
+border:1px solid black;
+max-height:25rem ;
+max-width: 30rem;
+width: 100%;
+height: 100%;
+z-index: 1;
+list-style: none;
+opacity: 1!important;
+cursor: auto;
+-webkit-animation: rotate-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+animation: rotate-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-in {
+  0% {
+    -webkit-transform: rotate3d(-1, 1, 0, -360deg);
+            transform: rotate3d(-1, 1, 0, -360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+            transform: rotate3d(-1, 1, 0, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in {
+  0% {
+    -webkit-transform: rotate3d(-1, 1, 0, -360deg);
+            transform: rotate3d(-1, 1, 0, -360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+            transform: rotate3d(-1, 1, 0, 0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes swirl-in {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes swirl-in {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.smallProject__img:hover{
+  cursor: pointer
+}
+
+
+.project__cont>h3{
+margin-left: 8em;
+}
+
+
+
+
+.smallProject__img{
+max-width: 3.2rem;
+max-height: 2.7rem;
+}
+
+
+.Small__icon{
+color:var(--black)!important
+}
+
+
+.smallProject__cont{
+background: linear-gradient(to left, rgba(90, 165, 184, 0.868), rgb(87, 167, 194));
+list-style: none;
+border: 1px solid black;
+border-radius: 0em 0em 1em 1em;
+height: 450px;
+justify-content: space-evenly;
+max-width: 500px;
+display: grid;
+padding-top: 20px;
+grid-template-columns: 100px 100px 100px 100px;
+grid-template-rows: 130px 9em min-content 50px;
+-webkit-animation: swirl-in 0.6s ease-out both;
+animation: swirl-in 0.6s ease-out both;
+}
+
+
+.project__cont{
+max-height:28rem ;
+max-width: 30rem;
+background: linear-gradient(to left, rgba(34, 60, 66, 0.368), rgb(10, 43, 54));
+width: 2em;
+border-top: 3px rgba(218, 11, 11, 0.4);
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+
+.smallProjects__container{
+margin-left: 1em;
+color: white;
+text-align: center;
+width: 3rem;
+padding: 0.2rem;
+}
+
+
+.close{
+width:550px;
+background-color: rgb(255, 255, 255);
+}
+
+
+.list__Project{
+padding: 0.5em;
+display: flex;
+text-align: center;
+margin-top: 3em;
+}
+
+
+.copied{
+position: absolute;
+top: 0;
+right: 0;
+height: 10rem;
+width: 10rem;
+border: 1px solid pink;
+}
+
+
+.project__hover{
+position: absolute;
+transform: rotate(45deg);
+-webkit-transform: rotate(35deg);
+margin-left: 30px;
+margin-top: -39px;
+}
+
+
+
+.things > .content {
+float: left;
+width: 70%;
+height: 500px;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;    
+box-sizing: border-box;
+position: relative;
+margin-bottom: 20px;
+margin-top: -20px;
+}
+  
+ 
+  
+  .arrow {
+position: relative;
+width: 100px;
+margin-top: 51px;
+margin-bottom: -51px;
+margin-left: -5px;
+  }
+  
+  .arrow .curve {
+border: 2px solid #BE5F4B;
+border-color: transparent transparent transparent #BE5F4B;
+height: 40px;
+width: 700px;
+border-radius: 60px 0 0 190px;
+margin-left: 30px;
+margin-top: -90px;
+}
+  
+  .arrow .point {
+position: absolute;
+left: 40px;
+top: 300px;
+  }
+  
+.arrow .point:before, .arrow .point:after {
+border: 1px solid #BE5F4B;
+height: 8px;
+content: "";
+position: absolute;
+  }
+  
+  .arrow .point:before {
+top: -299px;
+left: -5px;
+transform:rotate(-74deg);
+-webkit-transform:rotate(-48deg);
+-moz-transform:rotate(-74deg);
+-ms-transform: rotate(-74deg);
+  }
+  
+  .arrow .point:after {
+top: -299px;
+left: -12px;
+transform:rotate(12deg);
+-webkit-transform: rotate(50deg);
+-moz-transform:rotate(32deg);
+-ms-transform: rotate(42deg);
+  }
+
+
+
+@media all and (max-width:820px){
+  .smallProject{
+  max-width: 25rem;
+  max-height: 25rem;
+  left: 29%;
+  }
+}
+
+@media all and (max-width:590px){
+  .smallProject{
+   left: 29%;
+   bottom: 18vh;
+   max-width: 18rem;
+   max-height: 37rem;
+  }
+
+
+.smallProject__cont{
+  display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 130px 10em min-content 10px;
+height: 600px;
+}
+
+
+
+.list__Project{
+  padding: 10px;
+}
+.project__cont> h3{
+  margin-left: 45px;
+}
+}
+
+@media all and (min-width:1921px){
+  .smallProject{
+   left: 29%;
+   max-width: 48rem;
+   max-height: 37rem;
+  }
+.smallProject__cont{
+  display: grid;
+grid-template-columns: 150px 150px 150px 150px ;
+grid-template-rows: 150px 7em min-content 10px;
+height: 600px;
+max-width: 48rem;
+font-size: 18px;
+}
+
+.project__cont{
+  height: 2.2rem;
+  max-width: 100%;
+}
+.project__cont> h3{
+  margin-left: 215px;
+  font-size: 1.7rem;
+}
+
+.smallProject__img{
+max-width: 4.2rem!important;
+max-height: 5.7rem!important;
+  }
+}
+
+@media all and (max-width:445px){
+  .smallProject{
+    left: 20%;
+    top: 40%;
+    max-width: 250px;
+  }
+  
+  .smallProject__cont{
+    display: grid;
+    grid-template-columns: 50px 50px 50px ;
+    grid-template-rows: 120px 12em min-content 40px;
+    font-size: 11px;
+  
+  }
+  .list__Project{
+    margin-left: -13px;
+  }
+
+  
+}
+
+@media all and (min-width:320px){
+.smallProjects__container> img{
+width: 3.2rem;
+height: 3rem;           
+}
+
+.windows__text{
+font-size: 13px;
+width: 3rem;
+}
+}
+
+@media all and (min-width:1921px){
+.smallProjects__container> img{
+width: 4rem;
+height: 3.7rem;    
+}
+
+.smallProjects__container >caption{
+font-size: 17px;
+width: 3.4rem;
+}       
+}
