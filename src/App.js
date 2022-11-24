@@ -144,7 +144,7 @@ const App = () => {
                       className="smallProject__img"
                       src={projects.img} />
                     <h4>
-                      {projects.name} </h4>
+                      {projects.frontEnd} </h4>
                     {isFrontOpen ? <FrontEndProjects closeFront={closeFront} /> : null}
                   </div>)}
               </>
