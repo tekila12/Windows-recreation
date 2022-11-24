@@ -16,59 +16,10 @@ z-index: 1;
 list-style: none;
 opacity: 1!important;
 cursor: auto;
--webkit-animation: rotate-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-animation: rotate-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@-webkit-keyframes rotate-in {
-  0% {
-    -webkit-transform: rotate3d(-1, 1, 0, -360deg);
-            transform: rotate3d(-1, 1, 0, -360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
-            transform: rotate3d(-1, 1, 0, 0deg);
-    opacity: 1;
-  }
-}
-@keyframes rotate-in {
-  0% {
-    -webkit-transform: rotate3d(-1, 1, 0, -360deg);
-            transform: rotate3d(-1, 1, 0, -360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
-            transform: rotate3d(-1, 1, 0, 0deg);
-    opacity: 1;
-  }
-}
 
-@-webkit-keyframes swirl-in {
-  0% {
-    -webkit-transform: rotate(-540deg) scale(0);
-            transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
-@keyframes swirl-in {
-  0% {
-    -webkit-transform: rotate(-540deg) scale(0);
-            transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
+
 
 .smallProject__img:hover{
   cursor: pointer
@@ -89,7 +40,7 @@ max-height: 2.7rem;
 
 
 .Small__icon{
-color:var(--black)!important
+color:var(--color)!important
 }
 
 
@@ -105,11 +56,23 @@ display: grid;
 padding-top: 20px;
 grid-template-columns: 100px 100px 100px 100px;
 grid-template-rows: 130px 9em min-content 50px;
--webkit-animation: swirl-in 0.6s ease-out both;
-animation: swirl-in 0.6s ease-out both;
+
 }
 
-
+.projects__wrapper {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.3px;
+    width: max-content;
+    margin-left: 0.1em;
+   
+color: white;
+text-align: center;
+width: 3rem;
+padding: 0.2rem;
+}
 .project__cont{
 max-height:28rem ;
 max-width: 30rem;
@@ -130,7 +93,7 @@ width: 3rem;
 padding: 0.2rem;
 }
 
-
+.active
 .close{
 width:550px;
 background-color: rgb(255, 255, 255);

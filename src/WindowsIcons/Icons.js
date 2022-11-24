@@ -13,15 +13,11 @@ import React from 'react'
                  </a>
                 </li>           
             <div className='windows__hover'>
-             {inHoverIcons && <a  target="_blank" rel="noreferrer noopener" href={link}>
+             <a  target="_blank" rel="noreferrer noopener" href={link}>
              <svg >{git}</svg>
-              <div className="content__icons">
-              <div className="arrow__icons"> 
-              <div className="curve__icons"></div>
-              <div className="point__icons"></div> 
-              </div>
-              </div> 
-              </a>} 
+             
+             
+              </a>
               </div> 
             </div>
         )

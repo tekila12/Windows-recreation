@@ -81,7 +81,17 @@ export const smallProjects=[
     img:"/images/icons/creed.png",
     icon: <SiGithub/>,
     link: "https://github.com/tekila12/ASC.git",
+    
    },
+   {
+    id:131,
+    url:"https://league3321.netlify.app",
+    name:"League of Legends",
+    img:"/images/icons/lol.png",
+    link: "https://github.com/tekila12/leaguee.git",
+    git: <SiGithub/>,
+
+     },
  
 ]
 
@@ -95,15 +105,7 @@ export const frontEnd= [
     git: <SiGithub/>,
     link: "https://github.com/tekila12/Steam.git"
       },
-   {
-    id:131,
-    url:"https://league3321.netlify.app",
-    name:"League of Legends",
-    img:"/images/icons/lol.png",
-    link: "https://github.com/tekila12/leaguee.git",
-    git: <SiGithub/>,
 
-     },
      {
        id:13455439,
        url:"https://crypto3321.netlify.app/",

@@ -1,30 +1,44 @@
-import React,{useRef} from 'react'
-import {frontEnd} from "../data"
+import React, { useRef } from 'react'
+import { frontEnd } from "../data"
 import './SmallProject.css'
-import{GrClose} from "react-icons/gr"
+import { GrClose } from "react-icons/gr"
 import HoverIcons from './HoverIcons'
-import {useTransition, animated} from 'react-spring'
-const FrontEndProjects = ({closeFront}) => {
+import { useTransition, animated } from 'react-spring'
+const FrontEndProjects = ({ closeFront }) => {
     return (
-        <div className='smallProject'>    
-           <div className='project__cont'>
-              <GrClose className='close' onClick={closeFront} />
-                <h3>Windows project</h3>
-                  </div>
-                  <div  className='smallProject__cont' >
-                 {frontEnd.map((frontEndProjects)=>{                        
-               return(                                      
-                    <>
-                    <div>
-                        <h2>{frontEndProjects.name}</h2>
-                    </div>
-                    </>
-                                                         
-               )
-           })}
-              </div>   
+        <div className='smallProject'>
+            <div className='project__cont'>
+              
+                <h3>Front End Projects</h3>
+            </div>
+            <GrClose className='close'  />
+            <div className='smallProject__cont' >
+                {frontEnd.map((frontEndProjects) => {
+                    return (
+                        <>
+                            <li
+                               
+                                key={frontEndProjects.id}
+                                className='list__Project'>
+                                <div className='project__text'>
+                                    <a className='link__color' target="_blank" rel="noreferrer noopener" href={frontEndProjects.url}>
+                                        <img className='smallProject__img' alt='projectsImage' src={frontEndProjects.img} />
+                                        <h4 className='Small__icon'>{frontEndProjects.name}</h4>
+                                    </a>
+                                </div>
+                                <div className='project__hover'>
+                                    <a target="_blank" rel="noreferrer noopener" href={frontEndProjects.link}>
+                                        <svg>{frontEndProjects.icon}</svg>
+                                       </a>
+                                </div>
+                            </li>
+                        </>
+
+                    )
+                })}
+            </div>
         </div>
-    
+
     )
 }
 

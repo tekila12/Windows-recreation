@@ -9,7 +9,7 @@ const SmallProject = ({closeProject}) => {
         <div className='smallProject'>    
            <div className='project__cont'>
               <GrClose className='close' onClick={closeProject} />
-                <h3>Windows project</h3>
+                <h3>Small Projects</h3>
                   </div>
                   <div  className='smallProject__cont' >
                  {smallProjects.map((projects)=>{          
