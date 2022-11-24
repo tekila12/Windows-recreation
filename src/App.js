@@ -18,7 +18,7 @@ const data = [
     id: 764,
     img: "./images/icons/folder.png",
     image: "./images/icons/file.png",
-    frontEnd: "Front End Project",
+    frontEnd: "Front End Projects",
 
   },
 
