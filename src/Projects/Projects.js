@@ -123,12 +123,12 @@ const Projects = () => {
                   <div                                
                     key={projects.id}                   
                      >
-                      <div onDoubleClick={() => { setIsProjectOpen(!isProjectOpen) }}>
+                      <div onClick={() => { setIsProjectOpen(!isProjectOpen) }}>
                            <img alt='projectImage'
                     
                       className="smallProject__img"
                       src={projects.img} />
-                    <h4 className='project__text'>
+                    <h4>
                       {projects.smallProject} </h4> 
                       </div>              
                     {isProjectOpen ? <SmallProject closeProject={closeProject}  /> : null}
@@ -145,7 +145,7 @@ const Projects = () => {
                     key={projects.id}
                
                  
-                  ><div onDoubleClick={() => {setIsFrontOpen(!isFrontOpen) }}>
+                  ><div onClick={() => {setIsFrontOpen(!isFrontOpen) }}>
                     <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
@@ -167,7 +167,7 @@ const Projects = () => {
                     key={projects.id}
                               
                   >
-                    <div  onDoubleClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}>
+                    <div  onClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}>
                       <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
@@ -189,7 +189,7 @@ const Projects = () => {
                     
                  
                   >
-                    <div onDoubleClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }} >
+                    <div onClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }} >
                       <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
