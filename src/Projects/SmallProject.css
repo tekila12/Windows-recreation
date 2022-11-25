@@ -45,7 +45,7 @@ color:var(--color)!important
 
 
 .smallProject__cont{
-background: linear-gradient(to left, rgba(90, 165, 184, 0.868), rgb(87, 167, 194));
+  background-image: linear-gradient(to right top, #051937, #004d72, #008393, #00bf72, #a8eb12);
 list-style: none;
 border: 1px solid black;
 border-radius: 0em 0em 1em 1em;
@@ -58,6 +58,20 @@ grid-template-columns: 100px 100px 100px 100px;
 grid-template-rows: 130px 9em min-content 50px;
 
 }
+.projects__wrapper > div{
+  margin-left: 0.6em;
+  margin-top: 0.8em;
+}
+
+.show__github{
+  width: 130px;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+
 
 .projects__wrapper {
   position: relative;
@@ -67,11 +81,13 @@ grid-template-rows: 130px 9em min-content 50px;
     letter-spacing: 0.3px;
     width: max-content;
     margin-left: 0.1em;
-   
+   cursor: pointer;
 color: white;
 text-align: center;
 width: 3rem;
 padding: 0.2rem;
+margin-top: 0.4em;
+padding: 5px;
 }
 .project__cont{
 max-height:28rem ;
@@ -104,9 +120,31 @@ background-color: rgb(255, 255, 255);
 padding: 0.5em;
 display: flex;
 text-align: center;
-margin-top: 3em;
+margin-top: 0.5em;
+flex-direction: column;
 }
 
+.github__link{
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  border-color:transparent;
+}
+.github__button{
+  width: 60px;
+ height: 50px;
+}
+
+.github__container{
+display: flex;
+height: 50px;
+background-color: #004d72;
+flex-direction: row!important;
+width: 120px,
+
+
+}
 
 .copied{
 position: absolute;

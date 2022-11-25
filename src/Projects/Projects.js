@@ -62,7 +62,7 @@ const Projects = () => {
     setIsProjectOpen(false)
   }
   const closeFront = () => {
-    setIsProjectOpen(false)
+    setIsFrontOpen(false)
   }
   const closeThree = () => {
     setIsThreeOpen(false)
@@ -78,38 +78,38 @@ const Projects = () => {
 
   /* OutsideClick Logic */
 
-/*
-  const handleProject = (e) => {
-    if (smallProjectRef.current && !smallProjectRef.current.contains(e.target)) {
-      closeProject()
-    }
-  }
+
+  // const handleProject = (e) => {
+  //   if (smallProjectRef.current && !smallProjectRef.current.contains(e.target)) {
+  //     closeProject() && closeThree()
+  //   }
+  // }
 
 
 
-  useEffect(() => {
-    document.addEventListener('click', handleProject)
-    return () => {
-      document.removeEventListener('click', handleProject)
-    }
-  }, [])
+  // useEffect(() => {
+  //   document.addEventListener('click', handleProject)
+  //   return () => {
+  //     document.removeEventListener('click', handleProject)
+  //   }
+  // }, [])
 
 
-  const handleFrontEndProjects = (e) => {
-    if (frontEndprojectRef.current && !frontEndprojectRef.current.contains(e.target)) {
-      closeFront()
-    }
-  }
+  // const handleFrontEndProjects = (e) => {
+  //   if (frontEndprojectRef.current && !frontEndprojectRef.current.contains(e.target)) {
+  //     closeFront()
+  //   }
+  // }
 
-  useEffect(() => {
-    document.addEventListener('click', handleFrontEndProjects)
-    return () => {
-      document.removeEventListener('click', handleFrontEndProjects)
-    }
-  }, [])
+  // useEffect(() => {
+  //   document.addEventListener('click', handleFrontEndProjects)
+  //   return () => {
+  //     document.removeEventListener('click', handleFrontEndProjects)
+  //   }
+  // }, [])
 
 
-*/
+
 
 
 
@@ -121,22 +121,21 @@ const Projects = () => {
             return (
                 
               <>
-                {active === smallProjectRef.id && (
-                  <div
-                    onClick={() => { setIsProjectOpen(!isProjectOpen); setSmallProject(projects.id) }}
-                  
-                    key={projects.id}
-                    
+             
+                  <div                 
+                 
+                    key={projects.id}                   
                      >
-                      
-                    <img alt='projectImage'
+                      <div onClick={() => { setIsProjectOpen(!isProjectOpen) }}>
+                           <img alt='projectImage'
+                    
                       className="smallProject__img"
                       src={projects.img} />
-
                     <h4>
-                      {projects.smallProject} </h4>
-                    {isProjectOpen ? <SmallProject closeProject={closeProject} /> : null}
-                  </div>)}
+                      {projects.smallProject} </h4> 
+                      </div>              
+                    {isProjectOpen ? <SmallProject closeProject={closeProject}  /> : null}
+                  </div>
               </>
             )
           })}
@@ -147,14 +146,16 @@ const Projects = () => {
                 {active === frontEndprojectRef.id && (
                   <div
                     key={projects.id}
-                    onClick={() => {setIsFrontOpen(!isFrontOpen);  setFrontProject(projects.id) }}
+               
                  
-                  >
+                  ><div onClick={() => {setIsFrontOpen(!isFrontOpen) }}>
                     <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
                     <h4>
                       {projects.frontEnd} </h4>
+                  </div>
+                    
                     {isFrontOpen ? <FrontEndProjects  closeFront={closeFront} /> : null}
                   </div>)}
               </>
@@ -165,9 +166,13 @@ const Projects = () => {
               <>
                 {active === frontEndprojectRef.id && (
                   <div
+                    ref={smallProjectRef}
                     key={projects.id}
                     onClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}             
                   >
+                    <div>
+                      
+                    </div>
                     <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />

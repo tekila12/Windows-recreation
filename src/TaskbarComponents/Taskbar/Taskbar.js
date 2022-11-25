@@ -88,8 +88,8 @@ const Taskbar = () => {
              {isMenuOpen ? <Menu />: null}
             </div>
        
-           
-            <div
+        
+            {/* <div
              ref={panel}
              className={"menu__iconsRight " + ((isPanelOpen) ? "active": "")}   >
             <img  
@@ -97,7 +97,7 @@ const Taskbar = () => {
              onClick={() => setIsPanelOpen((isPanelOpen) => !isPanelOpen)} 
              src="https://winaero.com/blog/wp-content/uploads/2017/07/Control-panel-windows-10-icon.png"/>
              {isPanelOpen ? <ControlPanel   closePanel={closePanel}  />: null}         
-            </div>
+            </div> */}
 
 
         

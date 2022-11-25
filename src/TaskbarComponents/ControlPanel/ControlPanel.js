@@ -4,17 +4,14 @@ import { AppContext, AppProvider, useGlobalContext } from '../../context'
 import WindowsIcons from '../../WindowsIcons/WindowsIcons'
 
 import { GrClose } from 'react-icons/gr'
+
 const ControlPanel = ({closePanel}) => {
 
 const {remove, icons }= useGlobalContext()
   
-  if(icons.length===0){
-    return(
-      <div className='end'>
-      <h1 >All Projects have been uninstalled </h1>
-      </div>
-    )
-  }
+
+console.log(icons)
+
 
     return ( 
         <div className='control__Panel'>
@@ -23,7 +20,7 @@ const {remove, icons }= useGlobalContext()
             <h3>Control Panel</h3>
           </div>
           <div className='control__cont'>
-            {icons.map((unin)=> {            
+            {Object.keys(icons).map((unin)=> {            
               const { name, img, id} = unin         
                 return (               
                  <li className='control' key={id}>

@@ -1,23 +1,28 @@
 import React, { useRef } from 'react'
-import { frontEnd } from "../data"
+import { data } from "../database"
 import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
-import HoverIcons from './HoverIcons'
-import { useTransition, animated } from 'react-spring'
+import Draggable, {DraggableCore} from 'react-draggable';
+
 const FrontEndProjects = ({ closeFront }) => {
+  
     return (
-        <div className='smallProject'>
+
+  
+
+  
+        <div className='smallProject'> 
+      
             <div className='project__cont'>
-              
+                <GrClose className='close' onClick={closeFront} />
                 <h3>Front End Projects</h3>
             </div>
-            <GrClose className='close'  />
+           
             <div className='smallProject__cont' >
-                {frontEnd.map((frontEndProjects) => {
+                {data.frontend.map((frontEndProjects) => {
                     return (
                         <>
-                            <li
-                               
+                            <li                              
                                 key={frontEndProjects.id}
                                 className='list__Project'>
                                 <div className='project__text'>
@@ -38,6 +43,7 @@ const FrontEndProjects = ({ closeFront }) => {
                 })}
             </div>
         </div>
+     
 
     )
 }

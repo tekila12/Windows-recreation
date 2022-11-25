@@ -1,34 +1,36 @@
 import React, { useRef } from 'react'
-import { frontEnd } from "../data"
+import { data} from "../database"
 import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
-import HoverIcons from './HoverIcons'
-import { useTransition, animated } from 'react-spring'
+import Draggable, {DraggableCore} from 'react-draggable';
+
 const ThreeDProjects = ({ closeThree }) => {
     return (
+        <Draggable >
+
+      
         <div className='smallProject'>
             <div className='project__cont'>
-              
+               <GrClose className='close' onClick={closeThree}  />
                 <h3>3D Projects</h3>
-            </div>
-            <GrClose className='close' onClick={closeThree}  />
+            </div>      
             <div className='smallProject__cont' >
-                {frontEnd.map((frontEndProjects) => {
+                {data.three.map((threeProjects) => {
                     return (
                         <>
                             <li
                                
-                                key={frontEndProjects.id}
+                                key={threeProjects.id}
                                 className='list__Project'>
                                 <div className='project__text'>
-                                    <a className='link__color' target="_blank" rel="noreferrer noopener" href={frontEndProjects.url}>
-                                        <img className='smallProject__img' alt='projectsImage' src={frontEndProjects.img} />
-                                        <h4 className='Small__icon'>{frontEndProjects.name}</h4>
+                                    <a className='link__color' target="_blank" rel="noreferrer noopener" href={threeProjects.url}>
+                                        <img className='smallProject__img' alt='projectsImage' src={threeProjects.img} />
+                                        <h4 className='Small__icon'>{threeProjects.name}</h4>
                                     </a>
                                 </div>
                                 <div className='project__hover'>
-                                    <a target="_blank" rel="noreferrer noopener" href={frontEndProjects.link}>
-                                        <svg>{frontEndProjects.icon}</svg>
+                                    <a target="_blank" rel="noreferrer noopener" href={threeProjects.link}>
+                                        <svg>{threeProjects.icon}</svg>
                                        </a>
                                 </div>
                             </li>
@@ -38,7 +40,7 @@ const ThreeDProjects = ({ closeThree }) => {
                 })}
             </div>
         </div>
-
+        </Draggable>
     )
 }
 

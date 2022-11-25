@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { frontEnd } from "../data"
+import { data } from "../database"
 import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
 import HoverIcons from './HoverIcons'
@@ -8,27 +8,28 @@ const FullStackProjects = ({ closeFull }) => {
     return (
         <div className='smallProject'>
             <div className='project__cont'>
-                     
-                <h3>Front End Projects</h3>
-                <GrClose className='close' onClick={closeFull} />
+                         <GrClose className='close' onClick={closeFull} /> 
+                <h3>Full Stack Projects</h3>
+       
             </div>   
             <div className='smallProject__cont' >
-                {frontEnd.map((frontEndProjects) => {
+                {data.fullstack.map((fullstackProject) => {
                     return (
                         <>
                             <li
                                
-                                key={frontEndProjects.id}
+                                key={fullstackProject.id}
                                 className='list__Project'>
                                 <div className='project__text'>
-                                    <a className='link__color' target="_blank" rel="noreferrer noopener" href={frontEndProjects.url}>
-                                        <img className='smallProject__img' alt='projectsImage' src={frontEndProjects.img} />
-                                        <h4 className='Small__icon'>{frontEndProjects.name}</h4>
+                                    <a className='link__color' target="_blank" rel="noreferrer noopener" href={fullstackProject.url}>
+                                        <img className='smallProject__img' alt='projectsImage' src={fullstackProject.img} />
+                                        <h4 className='Small__icon'>{fullstackProject.name}</h4>
                                     </a>
                                 </div>
                                 <div className='project__hover'>
-                                    <a target="_blank" rel="noreferrer noopener" href={frontEndProjects.link}>
-                                        <svg>{frontEndProjects.icon}</svg>
+                                    <a target="_blank" rel="noreferrer noopener" href={fullstackProject.link}>
+                                        <svg>{fullstackProject.icon}</svg>
+                                        
                                        </a>
                                 </div>
                             </li>

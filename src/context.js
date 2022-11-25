@@ -1,11 +1,11 @@
 import React, {  useContext, useReducer,  } from 'react'
-import {windowsIcons} from './data'
+import {data} from './database'
 import reducer from './reducer'
 
 const AppContext = React.createContext()
 
 const initialState = {
-icons: windowsIcons
+icons: data
 }
 
 const AppProvider = ({ children }) => {
@@ -14,6 +14,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: 'REMOVE', payload: id })
   }
  
+
   return (
     <AppContext.Provider
       value={{ 

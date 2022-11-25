@@ -1,9 +1,9 @@
 import React from 'react'
-import {menuIcons} from "../../data"
+import {data} from "../../database"
 const Menu = () => {
     return (
         <div className='menu'>
-             {menuIcons.map((icon)=>{
+             {data.menu.map((icon)=>{
                 const {id, url ,name, img} = icon;
                 return (
                 <div key={id} className='menu__cont '>
