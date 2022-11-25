@@ -4,8 +4,12 @@ import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
 import HoverIcons from './HoverIcons'
 import { useTransition, animated } from 'react-spring'
+import Draggable, {DraggableCore} from 'react-draggable';
+
 const FullStackProjects = ({ closeFull }) => {
+    
     return (
+        <Draggable>
         <div className='smallProject'>
             <div className='project__cont'>
                          <GrClose className='close' onClick={closeFull} /> 
@@ -23,15 +27,16 @@ const FullStackProjects = ({ closeFull }) => {
                                 <div className='project__text'>
                                     <a className='link__color' target="_blank" rel="noreferrer noopener" href={fullstackProject.url}>
                                         <img className='smallProject__img' alt='projectsImage' src={fullstackProject.img} />
-                                        <h4 className='Small__icon'>{fullstackProject.name}</h4>
+                                        <h4 className='Small__iconn'>{fullstackProject.name}</h4>
                                     </a>
                                 </div>
-                                <div className='project__hover'>
-                                    <a target="_blank" rel="noreferrer noopener" href={fullstackProject.link}>
-                                        <svg>{fullstackProject.icon}</svg>
-                                        
-                                       </a>
-                                </div>
+                                <div className='github__container'>
+                                    <a target="_blank" rel="noreferrer noopener" href={fullstackProject.link} className='github__link'>
+                                        <button>
+                                            Github
+                                        </button>
+                                    </a>
+                                </div>                          
                             </li>
                         </>
 
@@ -39,7 +44,7 @@ const FullStackProjects = ({ closeFull }) => {
                 })}
             </div>
         </div>
-
+        </Draggable>
     )
 }
 

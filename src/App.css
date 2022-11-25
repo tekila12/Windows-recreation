@@ -111,6 +111,8 @@ body.dark {
     margin-top: 350px;
   }
 }
+
+
 .starting__text {
   color: white;
   margin-top: 20px;
@@ -659,6 +661,8 @@ body.dark {
   padding: 7px;
   -webkit-animation: roll-in-top 0.7s ease-out both;
   animation: roll-in-top 0.7s ease-out both;
+  color: var(--color);
+  font-weight: var(--font-weight);
   cursor: pointer;
 }
 

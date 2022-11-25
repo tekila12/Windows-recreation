@@ -106,7 +106,7 @@ export const data = {
         {
             id: 13455439,
             url: "https://crypto3321.netlify.app/",
-            name: "Crypto App",
+            name: "Crypto",
             img: "https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
             link: "https://github.com/tekila12/Crypto-App",
         },

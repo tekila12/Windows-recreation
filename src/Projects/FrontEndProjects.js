@@ -9,7 +9,7 @@ const FrontEndProjects = ({ closeFront }) => {
     return (
 
   
-
+<Draggable>
   
         <div className='smallProject'> 
       
@@ -31,11 +31,13 @@ const FrontEndProjects = ({ closeFront }) => {
                                         <h4 className='Small__icon'>{frontEndProjects.name}</h4>
                                     </a>
                                 </div>
-                                <div className='project__hover'>
-                                    <a target="_blank" rel="noreferrer noopener" href={frontEndProjects.link}>
-                                        <svg>{frontEndProjects.icon}</svg>
-                                       </a>
-                                </div>
+                                <div className='github__container'>
+                                    <a target="_blank" rel="noreferrer noopener" href={frontEndProjects.link} className='github__link'>
+                                        <button>
+                                            Github
+                                        </button>
+                                    </a>
+                                </div>                          
                             </li>
                         </>
 
@@ -43,7 +45,7 @@ const FrontEndProjects = ({ closeFront }) => {
                 })}
             </div>
         </div>
-     
+        </Draggable>
 
     )
 }

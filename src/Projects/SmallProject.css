@@ -16,6 +16,7 @@ z-index: 1;
 list-style: none;
 opacity: 1!important;
 cursor: auto;
+
 }
 
 
@@ -40,7 +41,7 @@ max-height: 2.7rem;
 
 
 .Small__icon{
-color:var(--color)!important
+  color: var(--color)!important;
 }
 
 
@@ -50,10 +51,11 @@ list-style: none;
 border: 1px solid black;
 border-radius: 0em 0em 1em 1em;
 height: 450px;
-justify-content: space-evenly;
+justify-content: space-around;
 max-width: 500px;
 display: grid;
 padding-top: 20px;
+align-items: center;
 grid-template-columns: 100px 100px 100px 100px;
 grid-template-rows: 130px 9em min-content 50px;
 
@@ -61,8 +63,13 @@ grid-template-rows: 130px 9em min-content 50px;
 .projects__wrapper > div{
   margin-left: 0.6em;
   margin-top: 0.8em;
+  color: var(--color);
+ 
 }
-
+.project__text{
+  color: var(--color)!important;
+ 
+}
 .show__github{
   width: 130px;
   height: 40px;
@@ -98,6 +105,7 @@ border-top: 3px rgba(218, 11, 11, 0.4);
 width: 100%;
 display: flex;
 align-items: center;
+cursor: grab;
 }
 
 
@@ -122,6 +130,7 @@ display: flex;
 text-align: center;
 margin-top: 0.5em;
 flex-direction: column;
+height: auto;
 }
 
 .github__link{
@@ -139,10 +148,20 @@ flex-direction: column;
 .github__container{
 display: flex;
 height: 50px;
-background-color: #004d72;
-flex-direction: row!important;
-width: 120px,
+margin-left: 10px;
+margin-top: 5px;
 
+}
+
+.github__container>a > button {
+  background-color:rgb(0, 0, 0);
+border: 3px solid gray;  
+width: 5.4em;
+color: white;
+display: flex;
+cursor: pointer;
+justify-content: center;
+align-items: center;
 
 }
 

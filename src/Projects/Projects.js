@@ -118,20 +118,17 @@ const Projects = () => {
         <>      
         <div className='projects__wrapper'> 
           {data.map((projects) => {
-            return (
-                
-              <>
-             
-                  <div                 
-                 
+            return (               
+              <>      
+                  <div                                
                     key={projects.id}                   
                      >
-                      <div onClick={() => { setIsProjectOpen(!isProjectOpen) }}>
+                      <div onDoubleClick={() => { setIsProjectOpen(!isProjectOpen) }}>
                            <img alt='projectImage'
                     
                       className="smallProject__img"
                       src={projects.img} />
-                    <h4>
+                    <h4 className='project__text'>
                       {projects.smallProject} </h4> 
                       </div>              
                     {isProjectOpen ? <SmallProject closeProject={closeProject}  /> : null}
@@ -148,7 +145,7 @@ const Projects = () => {
                     key={projects.id}
                
                  
-                  ><div onClick={() => {setIsFrontOpen(!isFrontOpen) }}>
+                  ><div onDoubleClick={() => {setIsFrontOpen(!isFrontOpen) }}>
                     <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
@@ -168,16 +165,16 @@ const Projects = () => {
                   <div
                     ref={smallProjectRef}
                     key={projects.id}
-                    onClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}             
+                              
                   >
-                    <div>
-                      
-                    </div>
-                    <img alt='projectImage'
+                    <div  onDoubleClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}>
+                      <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
                     <h4>
                       {projects.gl} </h4>
+                    </div>
+                    
                     {isThreeOpen ? <ThreeDProjects  closeThree={closeThree} /> : null}
                   </div>)}
               </>
@@ -189,14 +186,17 @@ const Projects = () => {
                 {active === frontEndprojectRef.id && (
                   <div
                     key={projects.id}
-                    onClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }}
+                    
                  
                   >
-                    <img alt='projectImage'
+                    <div onDoubleClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }} >
+                      <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
                     <h4>
                       {projects.full} </h4>
+                    </div>
+                    
                     {isFullOpen ? <FullStackProjects  closeFull={closeFull} /> : null}
                   </div>)}
               </>
