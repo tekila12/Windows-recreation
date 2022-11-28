@@ -21,7 +21,8 @@ const FullStackProjects = ({ closeFull }) => {
     return (
         <Draggable nodeRef={nodeRef} cancel='.close'  position={{
             x: currentPosition.xRate,
-            y: currentPosition.yRate}}>
+            y: currentPosition.yRate}}
+            onDrag={onDrag}>
         <div ref={nodeRef} className='smallProject'>
             <div className='project__cont'>
                          <GrClose className='close' onClick={closeFull} /> 
