@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState} from 'react'
 import { data } from "../database"
 import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
@@ -7,10 +7,21 @@ import { useTransition, animated } from 'react-spring'
 import Draggable, {DraggableCore} from 'react-draggable';
 
 const FullStackProjects = ({ closeFull }) => {
-    const nodeRef = React.useRef(null);
+    const nodeRef = React.useRef(null); 
+
+    const [currentPosition, setCurrentPosition] = useState({
+        xRate: 115,
+        yRate: 115
+      });
+    
+      const onDrag = (e, data) => {
+        setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
+      };
     
     return (
-        <Draggable nodeRef={nodeRef}>
+        <Draggable nodeRef={nodeRef} cancel='.close'  position={{
+            x: currentPosition.xRate,
+            y: currentPosition.yRate}}>
         <div ref={nodeRef} className='smallProject'>
             <div className='project__cont'>
                          <GrClose className='close' onClick={closeFull} /> 

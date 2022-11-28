@@ -1,17 +1,26 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { data} from "../database"
 import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
 import Draggable, {DraggableCore} from 'react-draggable';
 
 const ThreeDProjects = ({ closeThree }) => {
-
+    const [currentPosition, setCurrentPosition] = useState({
+        xRate: 150,
+        yRate: 150
+      });
+    
+      const onDrag = (e, data) => {
+        setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
+      };
     const nodeRef = React.useRef(null);
 
     return (
-        <Draggable nodeRef={nodeRef} >
-
-      
+        <Draggable cancel='.close'  nodeRef={nodeRef}  position={{
+            x: currentPosition.xRate,
+            y: currentPosition.yRate
+          }}
+          onDrag={onDrag}>    
         <div ref={nodeRef}className='smallProject'>
             <div className='project__cont'>
                <GrClose className='close' onClick={closeThree}  />

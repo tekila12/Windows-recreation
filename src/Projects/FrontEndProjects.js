@@ -10,7 +10,7 @@ const FrontEndProjects = ({ closeFront }) => {
    
 
     return (
-        <Draggable nodeRef={nodeRef}>
+        <Draggable cancel='.close' nodeRef={nodeRef}>
             <div ref={nodeRef} className='smallProject'>
                 <div className='project__cont'>
                     <GrClose className='close' onClick={closeFront} />
