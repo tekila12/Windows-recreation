@@ -6,8 +6,8 @@ import Draggable, {DraggableCore} from 'react-draggable';
 
 const ThreeDProjects = ({ closeThree }) => {
     const [currentPosition, setCurrentPosition] = useState({
-        xRate: 150,
-        yRate: 150
+        xRate: -150,
+        yRate: -150
       });
     
       const onDrag = (e, data) => {

@@ -6,8 +6,8 @@ import Draggable, {DraggableCore} from 'react-draggable';
 
 const SmallProject = ({closeProject}) => {
   const [currentPosition, setCurrentPosition] = useState({
-    xRate: 125,
-    yRate: 125
+    xRate: -225,
+    yRate: 285
   });
 
   const onDrag = (e, data) => {
