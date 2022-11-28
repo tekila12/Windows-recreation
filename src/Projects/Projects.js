@@ -119,9 +119,9 @@ const Projects = () => {
         <div className='projects__wrapper'> 
           {data.map((projects) => {
             return (               
-              <>      
+              <React.Fragment  key={projects.id} >      
                   <div                                
-                    key={projects.id}                   
+                                    
                      >
                       <div onClick={() => { setIsProjectOpen(!isProjectOpen) }}>
                            <img alt='projectImage'
@@ -133,18 +133,16 @@ const Projects = () => {
                       </div>              
                     {isProjectOpen ? <SmallProject closeProject={closeProject}  /> : null}
                   </div>
-              </>
+              </React.Fragment>
             )
           })}
 
           {data.map((projects) => {
             return (
-              <>
+              <React.Fragment key={projects.id}   >
                 {active === frontEndprojectRef.id && (
                   <div
-                    key={projects.id}
-               
-                 
+                              
                   ><div onClick={() => {setIsFrontOpen(!isFrontOpen) }}>
                     <img alt='projectImage'
                       className="smallProject__img"
@@ -155,16 +153,16 @@ const Projects = () => {
                     
                     {isFrontOpen ? <FrontEndProjects  closeFront={closeFront} /> : null}
                   </div>)}
-              </>
+              </React.Fragment>
             )
           })}
            {data.map((projects) => {
             return (
-              <>
+              <React.Fragment key={projects.id}>
                 {active === frontEndprojectRef.id && (
                   <div
                     ref={smallProjectRef}
-                    key={projects.id}
+                    
                               
                   >
                     <div  onClick={() => {setIsThreeOpen(!isThreeOpen);  setThreeProject(projects.id) }}>
@@ -177,15 +175,15 @@ const Projects = () => {
                     
                     {isThreeOpen ? <ThreeDProjects  closeThree={closeThree} /> : null}
                   </div>)}
-              </>
+              </React.Fragment>
             )
           })}
            {data.map((projects) => {
             return (
-              <>
+              <React.Fragment key={projects.id}>
                 {active === frontEndprojectRef.id && (
                   <div
-                    key={projects.id}
+                   
                     
                  
                   >
@@ -199,7 +197,7 @@ const Projects = () => {
                     
                     {isFullOpen ? <FullStackProjects  closeFull={closeFull} /> : null}
                   </div>)}
-              </>
+              </React.Fragment>
             )
           })}
                

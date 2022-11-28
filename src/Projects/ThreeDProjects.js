@@ -5,11 +5,14 @@ import { GrClose } from "react-icons/gr"
 import Draggable, {DraggableCore} from 'react-draggable';
 
 const ThreeDProjects = ({ closeThree }) => {
+
+    const nodeRef = React.useRef(null);
+
     return (
-        <Draggable >
+        <Draggable nodeRef={nodeRef} >
 
       
-        <div className='smallProject'>
+        <div ref={nodeRef}className='smallProject'>
             <div className='project__cont'>
                <GrClose className='close' onClick={closeThree}  />
                 <h3>3D Projects</h3>
@@ -17,24 +20,23 @@ const ThreeDProjects = ({ closeThree }) => {
             <div className='smallProject__cont' >
                 {data.three.map((threeProjects) => {
                     return (
-                        <>
-                            <li
-                               
-                                key={threeProjects.id}
+                        <React.Fragment  key={threeProjects.id}>
+                            <li                                                         
                                 className='list__Project'>
                                 <div className='project__text'>
                                     <a className='link__color' target="_blank" rel="noreferrer noopener" href={threeProjects.url}>
                                         <img className='smallProject__img' alt='projectsImage' src={threeProjects.img} />
                                         <h4 className='Small__icon'>{threeProjects.name}</h4>
                                     </a>
-                                </div>
-                                <div className='project__hover'>
+                                    <div className='project__hover'>
                                     <a target="_blank" rel="noreferrer noopener" href={threeProjects.link}>
                                         <svg>{threeProjects.icon}</svg>
                                        </a>
                                 </div>
+                                </div>
+                              
                             </li>
-                        </>
+                        </React.Fragment>
 
                     )
                 })}
