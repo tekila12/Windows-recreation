@@ -32,9 +32,9 @@ const FullStackProjects = ({ closeFull }) => {
             <div className='smallProject__cont' >
                 {data.fullstack.map((fullstackProject) => {
                     return (
-                        <React.Fragment  key={fullstackProject.id}>
+                        <React.Fragment >
                             <li
-                               
+                                key={fullstackProject.id}
                                
                                 className='list__Project'>
                                 <div className='project__text'>

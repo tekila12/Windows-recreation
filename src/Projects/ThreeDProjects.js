@@ -6,8 +6,8 @@ import Draggable, {DraggableCore} from 'react-draggable';
 
 const ThreeDProjects = ({ closeThree }) => {
     const [currentPosition, setCurrentPosition] = useState({
-        xRate: -150,
-        yRate: -150
+        xRate: -120,
+        yRate: 150
       });
     
       const onDrag = (e, data) => {
@@ -41,7 +41,16 @@ const ThreeDProjects = ({ closeThree }) => {
                                     <a target="_blank" rel="noreferrer noopener" href={threeProjects.link}>
                                         <svg>{threeProjects.icon}</svg>
                                        </a>
+                                       
                                 </div>
+                                <div className='github__container'>            
+              <a target="_blank" rel="noreferrer noopener" href={threeProjects.link} className='github__link'>             
+                <button>
+               Github
+                
+                  </button>                                             
+                </a>                   
+             </div>                     
                                 </div>
                               
                             </li>

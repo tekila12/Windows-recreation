@@ -93,7 +93,11 @@ export const data = {
 
     }],
     "three": [{
-
+        id: 1347,
+        url: "https://nimble-platypus-9b28f9.netlify.app",
+        name: "Three.js Watch Project",
+        img: "./images/SmallProject/watch.png",
+        link: "https://github.com/tekila12/Three.js-Watch",
     }],
     "frontend": [
         {
