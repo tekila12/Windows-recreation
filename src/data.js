@@ -206,7 +206,7 @@ export const windowsIcons =[
       { id:441, 
         icon: <ImFileWord/>,
         name: "Resume",
-        url: './images/icons/AjnurFrontResume.pdf'
+        url: './images/icons/frontEnd.pdf'
       },
       { id:23331, 
         icon: <SiLeetcode/>,
