@@ -102,7 +102,7 @@ export const data = {
     {
         id: 1377,
         url: "https://cool-taiyaki-449d18.netlify.app/",
-        name: "Three.js Sky-Box",
+        name: "Three.js Sky-Box Project",
         img: "./images/SmallProject/new-moon.png",
         link: "https://github.com/tekila12/Sky-box-Three.js",
     }],

@@ -12,6 +12,8 @@ const GuestPage = React.lazy(
     )
 );
 
+
+
 const App = React.lazy(
   () =>
     new Promise((resolve, reject) =>
@@ -25,11 +27,13 @@ const Home = () => {
         <Suspense fallback={<Loader />}>
             <Router>
         <Switch>              
-             <Route path='/app' component={App} />
+             <Route path='/app' component={App} />            
              <Route path='/' component={Setup} />       
         </Switch>    
            <Suspense fallback={<Start/>} > 
              <Route path='/guestPage' component={GuestPage} />
+            
+
            </Suspense >
             </Router>
         </Suspense>
