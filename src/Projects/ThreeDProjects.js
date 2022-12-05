@@ -38,7 +38,7 @@ const ThreeDProjects = ({ closeThree }) => {
                                         <h4 className='Small__icon'>{threeProjects.name}</h4>
                                     </a>
                                     <div className='project__hover'>
-                                    <a target="_blank" rel="noreferrer noopener" href={threeProjects.link}>
+                                    <a target="_blank" rel="noreferrer noopener" href={threeProjects.url}>
                                         <svg>{threeProjects.icon}</svg>
                                        </a>
                                        

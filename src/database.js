@@ -98,6 +98,13 @@ export const data = {
         name: "Three.js Watch Project",
         img: "./images/SmallProject/watch.png",
         link: "https://github.com/tekila12/Three.js-Watch",
+    },
+    {
+        id: 1377,
+        url: "https://cool-taiyaki-449d18.netlify.app/",
+        name: "Three.js Sky-Box",
+        img: "./images/SmallProject/new-moon.png",
+        link: "https://github.com/tekila12/Sky-box-Three.js",
     }],
     "frontend": [
         {
