@@ -105,6 +105,13 @@ export const data = {
         name: "Three.js Sky-Box Project",
         img: "./images/SmallProject/new-moon.png",
         link: "https://github.com/tekila12/Sky-box-Three.js",
+    },
+    {
+        id: 13737,
+        url: "https://master--incandescent-dasik-a99e11.netlify.app/",
+        name: "Invocation Fiber Project",
+        img: "./images/SmallProject/ball.png",
+        link: "https://github.com/tekila12/React-three-fiber-Ball",
     }],
     "frontend": [
         {
