@@ -112,7 +112,14 @@ export const data = {
         name: "Invocation Fiber Project",
         img: "./images/SmallProject/ball.png",
         link: "https://github.com/tekila12/React-three-fiber-Ball",
+    }, {
+        id: 13737,
+        url: "https://stirring-hamster-e39f45.netlify.app",
+        name: "Island React-Fiber ",
+        img: "./images/SmallProject/Island.png",
+        link: "https://github.com/tekila12/-Island-Model-in-Three-RF3",
     }],
+    
     "frontend": [
         {
             id: 1044,
