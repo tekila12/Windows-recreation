@@ -1,29 +1,14 @@
-body {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  min-width: 100%;
-  
-}
+
 
 :root {
   --black: rgb(27, 27, 27);
   --white: rgb(236, 236, 236);
   --font-weight:700;
   --slide1: url("https://wallpaperaccess.com/full/817497.jpg");
-  --slide2: url("https://th.bing.com/th/id/Rb5952fdd56d4264cbad02c191f9af225?rik=umZe9c44jBvxGA&pid=ImgRaw");
+  --slide2: url("https://th.bing.com/th/id/R8027190a6f61bc203908cdce0ffcf3a7?rik=daWH5DjRXfM4LA&pid=ImgRaw");
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
-  background: var(--slide1);
-  color: var(--color);
-  transition: 0.4s;
-  
-}
+
 
 body.light {
   background-position: center;
@@ -33,14 +18,16 @@ body.light {
   overflow-y: hidden;
   overflow-x: hidden;
   min-width: 100%;
-  min-height: 100%;
   object-fit: contain;
-  color: var(--white);
+  color: var(--black);
+  transition: 0.4s;
   font-weight: var(--font-weight);
-  --slide1: url("https://wallpaperaccess.com/full/654120.jpg");
+ background: var(--slide2);
 }
 
-
+body {
+  transition: 0.4s;
+}
 
 body.dark {
   background-position: center;
@@ -50,11 +37,11 @@ body.dark {
   overflow-y: hidden;
   overflow-x: hidden;
   min-width: 100%;
-  min-height: 100%;
   object-fit: contain;
-  color: var(--black);
+  color: var(--white);
+  transition: 0.4s;
   font-weight: var(--font-weight);
-  --slide2: url("https://th.bing.com/th/id/R8027190a6f61bc203908cdce0ffcf3a7?rik=daWH5DjRXfM4LA&pid=ImgRaw");
+  background: var(--slide2);
 }
 .starting__windows {
   background-color: black;

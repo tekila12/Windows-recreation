@@ -1,7 +1,7 @@
 
 
   #darkMode {
-    background-image: url("windark.png");
+    background-image: url("winlight.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -21,7 +21,7 @@
   
   #darkMode.clicked {
     filter: none !important;
-    background-image: url("winlight.png") ;
+    background-image: url("windark.png") ;
   }
 
   .theme_text{

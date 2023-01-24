@@ -82,6 +82,13 @@ export const data = {
 
 
         },
+        {
+            id: 1044,
+            url: "https://steam3321.netlify.app/",
+            name: "Steam Project",
+            img: "/images/icons/steamm.png",
+            link: "https://github.com/tekila12/Steam.git"
+        },
     ],
 
     "fullstack": [{

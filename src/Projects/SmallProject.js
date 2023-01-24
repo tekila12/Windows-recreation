@@ -1,5 +1,5 @@
 import React,{ useRef, useState} from 'react'
-import {small} from "../data"
+import { data} from "../database"
 import './SmallProject.css'
 import{GrClose} from "react-icons/gr"
 import Draggable, {DraggableCore} from 'react-draggable';
@@ -27,7 +27,7 @@ const SmallProject = ({closeProject}) => {
                 <h3>Small Projects</h3>
                   </div>
                   <div  className='smallProject__cont' >
-                 {small.map((projects)=>{     
+                 {data.small.map((projects)=>{     
                   const {id, name, url, img, icon, link,}  = projects  
                return(      
                 <React.Fragment key={id}>
@@ -53,14 +53,8 @@ const SmallProject = ({closeProject}) => {
                 </React.Fragment>                                         
                             
                )
-           })}
-        
-                
-           
-       
-              </div>   
-   
-             
+           })} 
+              </div>               
         </div>
         </Draggable>
     ) 
