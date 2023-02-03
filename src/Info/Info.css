@@ -19,8 +19,6 @@ left: 0%;
 display: inline-flex;
 text-align: center;
 padding: 0.6em;
-color:var(--color)
-
 
 }
 
@@ -41,7 +39,6 @@ box-shadow:         inset 0 0 10px #000000;
 
 .info__text  {
   text-decoration: none;
-  color:var(--color)!important;
 font-size: 14px!important;
 
 
