@@ -29,8 +29,13 @@ const data = [
     image: "./images/icons/file.png",
     full: "FullStack Projects",
    
+    id: 766,
+    img: "./images/icons/folder.png",
+    image: "./images/icons/file.png",
+    full: "Games",
 
   },
+  
 
 ]
 
@@ -179,6 +184,28 @@ const Projects = () => {
             )
           })}
            {data.map((projects) => {
+            return (
+              <React.Fragment key={projects.id}>
+                {active === frontEndprojectRef.id && (
+                  <div
+                   
+                    
+                 
+                  >
+                    <div onClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }} >
+                      <img alt='projectImage'
+                      className="smallProject__img"
+                      src={projects.img} />
+                    <h4>
+                      {projects.full} </h4>
+                    </div>
+                    
+                    {isFullOpen ? <FullStackProjects  closeFull={closeFull} /> : null}
+                  </div>)}
+              </React.Fragment>
+            )
+          })}
+          {data.map((projects) => {
             return (
               <React.Fragment key={projects.id}>
                 {active === frontEndprojectRef.id && (

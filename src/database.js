@@ -101,6 +101,15 @@ export const data = {
         link: "https://github.com/tekila12/Audible-e-commerce",
 
     }],
+
+    "games": [{
+        id: 1347,
+        url: "",
+        name: "3D Chess",
+        img: "https://github.com/tekila12/Audible-e-commerce/blob/master/client/public/audible/audible.png?raw=true",
+        link: "https://github.com/tekila12/Chess-game",
+
+    }],
     "three": [{
         id: 1347,
         url: "https://nimble-platypus-9b28f9.netlify.app",
