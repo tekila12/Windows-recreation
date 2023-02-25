@@ -4,7 +4,7 @@ import './SmallProject.css'
 import { GrClose } from "react-icons/gr"
 import Draggable, { DraggableCore } from 'react-draggable';
 
-const GamesProject = ({ closeFront }) => {
+const GamesProject = ({ closeGames }) => {
 
     const nodeRef = React.useRef(null);
    
@@ -13,8 +13,8 @@ const GamesProject = ({ closeFront }) => {
         <Draggable cancel='.close' nodeRef={nodeRef}>
             <div ref={nodeRef} className='smallProject'>
                 <div className='project__cont'>
-                    <GrClose className='close' onClick={closeFront} />
-                    <h3>Front End Projects</h3>
+                    <GrClose className='close' onClick={closeGames} />
+                    <h3>Games Project</h3>
                 </div>
 
                 <div className='smallProject__cont' >

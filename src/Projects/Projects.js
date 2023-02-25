@@ -6,6 +6,8 @@ import "../App.css"
 import { frontEnd } from '../data'
 import FullStackProjects from './FullStackProjects'
 import ThreeDProjects from './ThreeDProjects'
+import GamesProject from './GamesProject'
+
 
 const data = [
   {
@@ -32,7 +34,7 @@ const data = [
     id: 766,
     img: "./images/icons/folder.png",
     image: "./images/icons/file.png",
-    full: "Games",
+    games: "Games",
 
   },
   
@@ -52,10 +54,12 @@ const Projects = () => {
   const [isFrontOpen, setIsFrontOpen] = useState(false)
   const [isFullOpen, setIsFullOpen] = useState(false)
   const [isThreeOpen, setIsThreeOpen] = useState(false)
+  const [isGamesOpen, setIsGamesOpen] = useState(false)
   const [smallProject, setSmallProject] = useState()
   const [FullProject, setFullProject] = useState()
   const [ThreeProject, setThreeProject] = useState()
   const [frontProject, setFrontProject] = useState()
+  const [gamesProject, setGamesProject] = useState()
   const [games, setGames] = useState()
   const [active, setActive] = useState()
   const smallProjectRef = useRef(null)
@@ -74,6 +78,9 @@ const Projects = () => {
   }
   const closeFull = () => {
     setIsFullOpen(false)
+  }
+  const closeGames = () => {
+    setIsGamesOpen(false)
   }
  /*
   const fron = data.find(projects => projects.id === frontProject)
@@ -214,15 +221,15 @@ const Projects = () => {
                     
                  
                   >
-                    <div onClick={() => {setIsFullOpen(!isFullOpen);  setFullProject(projects.id) }} >
+                    <div onClick={() => {setIsGamesOpen(!isGamesOpen);  setGamesProject(projects.id) }} >
                       <img alt='projectImage'
                       className="smallProject__img"
                       src={projects.img} />
                     <h4>
-                      {projects.full} </h4>
+                      {projects.games} </h4>
                     </div>
                     
-                    {isFullOpen ? <FullStackProjects  closeFull={closeFull} /> : null}
+                    {isGamesOpen ? <GamesProject closeGames={closeGames} /> : null}
                   </div>)}
               </React.Fragment>
             )
