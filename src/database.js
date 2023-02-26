@@ -106,7 +106,7 @@ export const data = {
         id: 1347,
         url: "",
         name: "3D Chess",
-        img: "https://github.com/tekila12/Audible-e-commerce/blob/master/client/public/audible/audible.png?raw=true",
+        img: "./images/SmallProject/chessIcon.png",
         link: "https://github.com/tekila12/Chess-game",
 
     }],
