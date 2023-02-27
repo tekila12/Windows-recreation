@@ -60,7 +60,6 @@ const Projects = () => {
   const [ThreeProject, setThreeProject] = useState()
   const [frontProject, setFrontProject] = useState()
   const [gamesProject, setGamesProject] = useState()
-  const [games, setGames] = useState()
   const [active, setActive] = useState()
   const smallProjectRef = useRef(null)
   const frontEndprojectRef = useRef(null)
