@@ -15,6 +15,9 @@ body {
   --font-weight:700;
   --slide1: url("https://wallpaperaccess.com/full/817497.jpg");
   --slide2: url("https://th.bing.com/th/id/Rb5952fdd56d4264cbad02c191f9af225?rik=umZe9c44jBvxGA&pid=ImgRaw");
+  --backgroundcolorOne: linear-gradient(to left, rgba(28, 35, 72, 0.5), rgba(1, 7, 15, 0.192));
+  --backgroundcolorTwo: linear-gradient(to left, rgba(2, 23, 23, 0.5), rgba(8, 87, 127, 0.192));
+
 }
 
 body {
@@ -37,7 +40,7 @@ body.light {
   object-fit: contain;
   color: var(--black);
   font-weight: var(--font-weight);
- 
+  background-color:  var(--backgroundcolorOne);
   --slide2: url("https://th.bing.com/th/id/R8027190a6f61bc203908cdce0ffcf3a7?rik=daWH5DjRXfM4LA&pid=ImgRaw");
 }
 
@@ -56,6 +59,7 @@ body.dark {
   color: var(--white);
   font-weight: var(--font-weight);
   --slide1: url("https://wallpaperaccess.com/full/654120.jpg");
+  background-color:  var(--backgroundcolorTwo);
 }
 .starting__windows {
   background-color: black;
