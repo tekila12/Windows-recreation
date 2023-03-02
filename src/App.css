@@ -15,7 +15,7 @@ body {
   --font-weight:700;
   --slide1: url("https://wallpaperaccess.com/full/817497.jpg");
   --slide2: url("https://th.bing.com/th/id/Rb5952fdd56d4264cbad02c191f9af225?rik=umZe9c44jBvxGA&pid=ImgRaw");
-  --backgroundcolorOne: linear-gradient(to left, rgba(28, 35, 72, 0.5), rgba(1, 7, 15, 0.192));
+  --backgroundcolorOne: linear-gradient(to left, rgba(24, 45, 152, 0.5),rgba(5, 32, 67, 0.192)));
   --backgroundcolorTwo: linear-gradient(to left, rgba(2, 23, 23, 0.5), rgba(8, 87, 127, 0.192));
 
 }
