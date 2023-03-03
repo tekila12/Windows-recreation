@@ -1,8 +1,6 @@
 
 
-export const data = {
-
-    
+export const data = { 
     "small": [
         {
             id: 1,
@@ -113,31 +111,30 @@ export const data = {
     "three": [{
         id: 1347,
         url: "https://nimble-platypus-9b28f9.netlify.app",
-        name: "Three.js Watch Project",
+        name: "Watch 3D Project",
         img: "./images/SmallProject/watch.png",
         link: "https://github.com/tekila12/Three.js-Watch",
     },
     {
         id: 1377,
         url: "https://cool-taiyaki-449d18.netlify.app/",
-        name: "Three.js Sky-Box Project",
+        name: "Sky-Box 3D Project",
         img: "./images/SmallProject/new-moon.png",
         link: "https://github.com/tekila12/Sky-box-Three.js",
     },
     {
         id: 13737,
         url: "https://master--incandescent-dasik-a99e11.netlify.app/",
-        name: "Invocation Fiber Project",
+        name: "Invocation 3D Project",
         img: "./images/SmallProject/ball.png",
         link: "https://github.com/tekila12/React-three-fiber-Ball",
     }, {
         id: 13737,
         url: "https://stirring-hamster-e39f45.netlify.app",
-        name: "Island React-Fiber ",
+        name: "Island 3D Project ",
         img: "./images/SmallProject/Island.png",
         link: "https://github.com/tekila12/-Island-Model-in-Three-RF3",
-    }],
-    
+    }],  
     "frontend": [
         {
             id: 1044,
@@ -181,5 +178,4 @@ export const data = {
             img: "https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
         },
     ]
-
 }
