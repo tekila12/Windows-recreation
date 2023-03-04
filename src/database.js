@@ -103,7 +103,7 @@ export const data = {
     "games": [{
         id: 1347,
         url: "",
-        name: "3D Chess",
+        name: "3D Chess Project",
         img: "./images/SmallProject/chessIcon.png",
         link: "https://github.com/tekila12/Chess-game",
 
@@ -139,14 +139,14 @@ export const data = {
         {
             id: 1044,
             url: "https://steam3321.netlify.app/",
-            name: "Steam",
+            name: "Steam Project",
             img: "/images/icons/steamm.png",
             link: "https://github.com/tekila12/Steam.git"
         },
         {
             id: 13455439,
             url: "https://crypto3321.netlify.app/",
-            name: "Crypto",
+            name: "Crypto Project",
             img: "https://github.com/tekila12/Crypto-App/blob/master/public/icons/logo.png?raw=true",
             link: "https://github.com/tekila12/Crypto-App",
         },
